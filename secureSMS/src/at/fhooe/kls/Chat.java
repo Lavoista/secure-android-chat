@@ -1,0 +1,146 @@
+package at.fhooe.kls;
+
+import java.util.ArrayList;
+import java.util.Date;
+
+import org.jivesoftware.smack.ChatManagerListener;
+import org.jivesoftware.smack.PacketListener;
+import org.jivesoftware.smack.XMPPConnection;
+import org.jivesoftware.smack.filter.MessageTypeFilter;
+import org.jivesoftware.smack.filter.PacketFilter;
+import org.jivesoftware.smack.packet.Message;
+import org.jivesoftware.smack.packet.Packet;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.TextView;
+
+// TODO: Auto-generated Javadoc
+/**
+ * The Class Chat.
+ */
+public class Chat extends Activity implements OnClickListener,
+		ChatManagerListener {
+	
+	/** The message view. */
+	ListView messageView;
+	
+	/** The messages. */
+	ArrayList<ChatMessage> messages;
+	
+	/** The adapter. */
+	private ChatListAdapter adapter;
+	
+	/** The message composer. */
+	private EditText messageComposer;
+	
+	/** The contact. */
+	private ContactItem contact;
+
+	/**
+	 * Called when the activity is first created.
+	 *
+	 * @param savedInstanceState the saved instance state
+	 */
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.chat);
+
+		Button send = (Button) findViewById(R.id.btSend);
+		send.setOnClickListener(this);
+
+		Bundle extras = getIntent().getExtras();
+		messages = new ArrayList<ChatMessage>();
+		messageComposer = (EditText) findViewById(R.id.editText1);
+		messageView = (ListView) findViewById(R.id.listView1);
+		adapter = new ChatListAdapter(this, R.layout.row, messages);
+		messageView.setAdapter(adapter);
+		
+		contact = (ContactItem) extras.getParcelable("contact");
+		ChatMessage chatmessage = (ChatMessage) extras
+				.getParcelable("chatmessage");
+		if (chatmessage != null) {
+			messages.add(chatmessage);
+			adapter.notifyDataSetChanged();
+		}
+		TextView chatWith=(TextView) findViewById(R.id.chatWith);
+		chatWith.setText("..."+contact.getUser());
+		XMPPConnection conn = XMPPClient.getInstance().getConnection();
+
+		PacketFilter messageFilter = new MessageTypeFilter(Message.Type.chat);
+		conn.addPacketListener(new PacketListener() {
+			public void processPacket(Packet packet) {
+				Message message = (Message) packet;
+				if (message.getBody() != null) {
+					String msg = message.getBody();
+					try {
+						msg = new String(
+								Util.decrypt(Util.toByte(contact.getKey()),
+										Util.toByte(msg)));
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					messages.add(new ChatMessage(message.getFrom(), new Date(),
+							msg));
+					adapter.notifyDataSetChanged();
+					if (messages.size() > 0)
+						messageView.smoothScrollToPosition(messages.size() - 1);
+				}
+			}
+		}, messageFilter);
+
+	}
+
+	/* (non-Javadoc)
+	 * @see android.view.View.OnClickListener#onClick(android.view.View)
+	 */
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		switch (v.getId()) {
+		case R.id.btSend:
+			messages.add(new ChatMessage("Me", new Date(), messageComposer
+					.getText().toString(), true));
+			String message = "";
+			try {
+				message = Util.toHex(Util.encrypt(
+						Util.toByte(contact.getKey()), messageComposer
+								.getText().toString().getBytes()));
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			XMPPClient.getInstance().sendMessage(contact.getUser(), message);
+			messageComposer.setText("");
+			adapter.notifyDataSetChanged();
+			if (messages.size() > 0)
+				messageView.smoothScrollToPosition(messages.size() - 1);
+			break;
+		default:
+			break;
+		}
+	}
+
+	/**
+	 * Sets the contact.
+	 *
+	 * @param _contact the new contact
+	 */
+	public void setContact(ContactItem _contact) {
+		contact = _contact;
+	}
+
+	/* (non-Javadoc)
+	 * @see org.jivesoftware.smack.ChatManagerListener#chatCreated(org.jivesoftware.smack.Chat, boolean)
+	 */
+	public void chatCreated(org.jivesoftware.smack.Chat arg0, boolean arg1) {
+		// TODO Auto-generated method stub
+
+	}
+}
