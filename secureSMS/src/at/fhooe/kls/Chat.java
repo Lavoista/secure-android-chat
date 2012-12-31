@@ -79,14 +79,14 @@ public class Chat extends Activity implements OnClickListener,
 				Message message = (Message) packet;
 				if (message.getBody() != null) {
 					String msg = message.getBody();
-					try {
+					/*try {
 						msg = new String(
 								Util.decrypt(Util.toByte(contact.getKey()),
 										Util.toByte(msg)));
 					} catch (Exception e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
-					}
+					}*/
 					messages.add(new ChatMessage(message.getFrom(), new Date(),
 							msg));
 					adapter.notifyDataSetChanged();
@@ -107,15 +107,16 @@ public class Chat extends Activity implements OnClickListener,
 		case R.id.btSend:
 			messages.add(new ChatMessage("Me", new Date(), messageComposer
 					.getText().toString(), true));
-			String message = "";
-			try {
+			String message =  messageComposer
+					.getText().toString();
+			/*try {
 				message = Util.toHex(Util.encrypt(
 						Util.toByte(contact.getKey()), messageComposer
 								.getText().toString().getBytes()));
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}
+			}*/
 			XMPPClient.getInstance().sendMessage(contact.getUser(), message);
 			messageComposer.setText("");
 			adapter.notifyDataSetChanged();

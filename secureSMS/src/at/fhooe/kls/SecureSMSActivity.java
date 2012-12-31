@@ -4,6 +4,7 @@ import info.guardianproject.database.SQLException;
 import info.guardianproject.database.sqlcipher.SQLiteDatabase;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Date;
 
@@ -337,7 +338,7 @@ public class SecureSMSActivity extends Activity implements OnClickListener,
 	@Override
 	public void entriesAdded(Collection<String> addresses) {
 		// TODO Auto-generated method stub
-
+		Log.d("WLM","entries added: "+Arrays.toString(addresses.toArray(new String[]{})));
 	}
 
 	/* (non-Javadoc)
@@ -346,7 +347,7 @@ public class SecureSMSActivity extends Activity implements OnClickListener,
 	@Override
 	public void entriesDeleted(Collection<String> addresses) {
 		// TODO Auto-generated method stub
-
+		Log.d("WLM","entries deleted: "+Arrays.toString(addresses.toArray(new String[]{})));
 	}
 
 	/* (non-Javadoc)
@@ -355,7 +356,7 @@ public class SecureSMSActivity extends Activity implements OnClickListener,
 	@Override
 	public void entriesUpdated(Collection<String> addresses) {
 		// TODO Auto-generated method stub
-
+		Log.d("WLM","entries updated: "+Arrays.toString(addresses.toArray(new String[]{})));
 	}
 
 	/* (non-Javadoc)
@@ -365,6 +366,7 @@ public class SecureSMSActivity extends Activity implements OnClickListener,
 	public void presenceChanged(Presence presence) {
 		// TODO Auto-generated method stub
 		String user = presence.getFrom();
+		Log.d("WLM","prescene of user: "+user+" changed");
 		// Presence bestPresence = mRoster.getPresence(user);
 		boolean online = presence.isAvailable();
 		for (ContactItem c : contacts) {
@@ -401,9 +403,9 @@ public class SecureSMSActivity extends Activity implements OnClickListener,
 					long time=System.currentTimeMillis();
 					String msg=_message.getBody();
 					String key="";
-					try {
+					/*try {
 						// Cursor c=mAdapter.fetchNote(con.getUser());
-						/*key = mAdapter.getKey(sender);*/
+						key = mAdapter.getKey(sender);
 						key=SecureSharedPrefAdapter.getKey(sender);
 					} catch (SQLException s) {
 						Log.d(TAG, s.getMessage());
@@ -414,7 +416,7 @@ public class SecureSMSActivity extends Activity implements OnClickListener,
 					} catch (Exception e) {
 						// TODO Auto-generated catch block
 						Log.e(TAG, "decrytion failed");
-					}
+					}*/
 					ChatMessage message=new ChatMessage(sender, new Date(time), msg, false);
 					
 					for(ContactItem c:contacts){

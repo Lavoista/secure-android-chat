@@ -28,7 +28,7 @@ public class XMPPClient {
 	 */
 	public boolean login(String _user, String _pass) {
 		try {
-			conn = new XMPPConnection("gmail.com");
+			conn = new XMPPConnection("wtfismyip.com");
 			conn.connect();
 
 			// We do not need user name in this case.

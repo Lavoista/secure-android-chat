@@ -53,7 +53,7 @@ public class StartUp extends Activity {
 	public static final String PREFS_NAME = "MyPrefsFile";
 
 	/** The m adapter. */
-	SMSAdapter mAdapter;
+	//SMSAdapter mAdapter;
 
 	String PASSWORD;
 	String USERNAME;
@@ -68,20 +68,20 @@ public class StartUp extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		if (Build.VERSION.SDK_INT < 10) {
-			SQLiteDatabase.loadLibs(this);
-			mAdapter = SecureSMSAdapter.getInstance(this);
+			//SQLiteDatabase.loadLibs(this);
+			//mAdapter = SecureSMSAdapter.getInstance(this);
 		} else
-			mAdapter = SMSAdapter.getInstance(this);
+			//mAdapter = SMSAdapter.getInstance(this);
 
 		if (DEBUG) {
 			final TelephonyManager tm = (TelephonyManager) getBaseContext()
 					.getSystemService(Context.TELEPHONY_SERVICE);
 			if (tm.getDeviceId().equals("351554050051631")) {
-				USERNAME = "mustertest2011@gmail.com";
-				PASSWORD = "muster1234";
+				USERNAME = "sip_gateway1";
+				PASSWORD = "sip_gateway1";
 			} else {
-				USERNAME = "mustertest2012@gmail.com";
-				PASSWORD = "muster1234";
+				USERNAME = "sip_gateway2";
+				PASSWORD = "sip_gateway2";
 			}
 
 		}
