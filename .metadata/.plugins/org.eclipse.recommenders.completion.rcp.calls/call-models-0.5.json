@@ -1,0 +1,22 @@
+{
+  "D:\\FH_DEV\\secure-android-chat\\xmppGateway\\lib\\smack.jar": {
+    "location": "D:\\FH_DEV\\secure-android-chat\\xmppGateway\\lib\\smack.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027D:\\FH_DEV\\secure-android-chat\\xmppGateway\\lib\\smack.jar\u0027. Neither fingerprint \u0027e68dbf75b96ecedc04aefa203749fd44c29855f7\u0027 nor symbolic name \u0027org.igniterealtime.smack\u0027 are known."
+  },
+  "C:\\Program Files\\Java\\jre7\\lib\\rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\rt.jar",
+    "status": "RESOLVED"
+  },
+  "D:\\FH_DEV\\secure-android-chat\\xmppGateway\\src": {
+    "location": "D:\\FH_DEV\\secure-android-chat\\xmppGateway\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\FH_DEV\\secure-android-chat\\xmppGateway\\src\u0027. Skipped."
+  },
+  "C:\\Users\\ckies_000\\android-sdks\\platforms\\android-10\\android.jar": {
+    "location": "C:\\Users\\ckies_000\\android-sdks\\platforms\\android-10\\android.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027C:\\Users\\ckies_000\\android-sdks\\platforms\\android-10\\android.jar\u0027. Neither fingerprint \u0027b50d42b32e1d8a6c2d5f19a846474d5e2199c68e\u0027 nor symbolic name \u0027android\u0027 are known."
+  }
+}

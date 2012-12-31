@@ -1,0 +1,41 @@
+import java.util.Vector;
+
+import javax.swing.JPanel;
+
+import org.jivesoftware.smack.Connection;
+import org.jivesoftware.smack.ConnectionCreationListener;
+import org.jivesoftware.smack.XMPPException;
+
+
+public class XmppPanel extends JPanel {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5657339239939443076L;
+Vector m_connections=new Vector<WTFConnection>()
+	public XmppPanel() {
+		Connection conn = new WTFConnection();
+	
+		
+		try {
+			conn.connect();
+			conn.login("sip_gateway1", "sip_gateway1");
+			WTFConnection.addConnectionCreationListener(new ConnectionCreationListener() {
+				
+				@Override
+				public void connectionCreated(Connection _conn) {
+					System.out.println(_conn.getConnectionID());
+				}
+			});
+			XmppConnectionHandler handler = new XmppConnectionHandler(conn);
+		} catch (XMPPException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	public void initConnections(){
+		
+	}
+
+}

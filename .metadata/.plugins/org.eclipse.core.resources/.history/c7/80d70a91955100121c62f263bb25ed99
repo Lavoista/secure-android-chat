@@ -1,0 +1,128 @@
+import java.awt.FlowLayout;
+import java.util.Vector;
+
+import javax.swing.JList;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.JTextPane;
+
+import org.jivesoftware.smack.Connection;
+import org.jivesoftware.smack.ConnectionCreationListener;
+import org.jivesoftware.smack.ConnectionListener;
+import org.jivesoftware.smack.PacketListener;
+import org.jivesoftware.smack.XMPPException;
+import org.jivesoftware.smack.filter.MessageTypeFilter;
+import org.jivesoftware.smack.packet.Message;
+import org.jivesoftware.smack.packet.Packet;
+import org.jivesoftware.smack.packet.Message.Type;
+
+public class XmppPanel extends JPanel implements ConnectionListener,PacketListener {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5657339239939443076L;
+	Vector<Connection> m_connections = new Vector<Connection>();
+	XmppConnectionHandler m_handler = new XmppConnectionHandler();
+	JList<Connection> m_userList;
+	JTextArea m_log;
+	public XmppPanel() {
+		setLayout(new FlowLayout());
+		m_userList= new JList<>(m_connections);
+		JScrollPane listScrollPane = new JScrollPane(m_userList);
+		add(listScrollPane);
+		m_log=new JTextArea(30, 60);
+		m_log.setText("XMPP LOG");
+		JScrollPane logScrollPane = new JScrollPane(m_log);
+		add(logScrollPane);
+		new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				m_log.append("\n try to connect");
+				//m_log.notify();
+				initConnections();
+				m_log.append("\n all account connected");
+				m_userList.updateUI();
+				// TODO Auto-generated method stub
+				
+			}
+		}).start();
+		
+	}
+
+	public void initConnections() {
+		String[] account= new String[]{"sip_gateway1","sip_gateway2"};
+		for(String a:account){
+			try{
+			Connection conn= new WTFConnection();
+			conn.connect();
+			conn.login(a, a);
+			WTFConnection
+			.addConnectionCreationListener(new ConnectionCreationListener() {
+
+				@Override
+				public void connectionCreated(Connection _conn) {
+					System.out.println(_conn.getConnectionID());
+				}
+			});
+			conn.addConnectionListener(this);
+			conn.addPacketListener(this, new MessageTypeFilter(Type.chat));	
+	
+			m_connections.add(conn);
+			}
+			catch(XMPPException _e){
+				_e.printStackTrace();
+			}
+			
+		}
+	}
+	@Override
+	public void connectionClosed() {
+		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public void connectionClosedOnError(Exception _e) {
+		
+		_e.printStackTrace();
+	}
+
+	@Override
+	public void reconnectingIn(int arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void reconnectionFailed(Exception arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void reconnectionSuccessful() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void processPacket(Packet _packet) {
+		//System.out.println(_packet.toXML());
+		printPacket(_packet);
+	}
+	public void printPacket(Packet _packet){
+		if (!(_packet instanceof Message)||((Message)_packet).getBody().isEmpty()){
+			return;
+		}
+		Message msg=(Message)_packet;
+	
+		String p=String.format("\nfrom:%s to:%s message:%s",msg.getFrom(),msg.getTo(),msg.getBody());
+		
+		m_log.append(p);
+		m_log.notifyAll();
+		System.out.println(p);
+	}
+
+}

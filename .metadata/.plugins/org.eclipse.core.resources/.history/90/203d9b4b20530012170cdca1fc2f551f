@@ -1,0 +1,433 @@
+package at.fhooe.kls;
+
+import info.guardianproject.database.SQLException;
+import info.guardianproject.database.sqlcipher.SQLiteDatabase;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Date;
+
+import org.jivesoftware.smack.ChatManagerListener;
+import org.jivesoftware.smack.MessageListener;
+import org.jivesoftware.smack.Roster;
+import org.jivesoftware.smack.RosterEntry;
+import org.jivesoftware.smack.RosterListener;
+import org.jivesoftware.smack.packet.Message;
+import org.jivesoftware.smack.packet.Presence;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.hardware.SensorManager;
+import android.os.Build;
+import android.os.Bundle;
+import android.os.Handler;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.AdapterView.OnItemLongClickListener;
+import android.widget.Button;
+import android.widget.ListView;
+import android.widget.Toast;
+
+// TODO: Auto-generated Javadoc
+/**
+ * The Class SecureSMSActivity.
+ */
+public class SecureSMSActivity extends Activity implements OnClickListener,
+		OnItemClickListener, OnItemLongClickListener, RosterListener,
+		ChatManagerListener {
+
+	/** The adapter. */
+	private ContactListAdapter adapter;
+	
+	/** The contacts. */
+	private ArrayList<ContactItem> contacts = new ArrayList<ContactItem>();
+	
+	/** The list contacts. */
+	private ListView listContacts;
+	
+	/** The client. */
+	private static XMPPClient client;
+	
+	/** The sensor m. */
+	private SensorManager sensorM;
+	
+	/** The m adapter. */
+	private SMSAdapter mAdapter;
+	
+	/** The m roster. */
+	private Roster mRoster;
+	
+	/** The TAG. */
+	static String TAG = "SMS";
+	
+	/** The handler. */
+	private Handler handler;
+
+	/**
+	 * Called when the activity is first created.
+	 *
+	 * @param savedInstanceState the saved instance state
+	 */
+	@SuppressWarnings("static-access")
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.main);
+
+		Button btImport = (Button) findViewById(R.id.btImport);
+		btImport.setOnClickListener(this);
+
+		adapter = new ContactListAdapter(this, R.layout.row, contacts);
+		client = new XMPPClient().getInstance();
+		/*
+		if (Build.VERSION.SDK_INT < 10) {
+			SQLiteDatabase.loadLibs(this);
+			mAdapter = SecureSMSAdapter.getInstance(this);
+		} else
+			mAdapter = SMSAdapter.getInstance(this);
+		if (!mAdapter.isOpen()) {
+			Intent intent = new Intent(this, PasswordPopUp.class);
+			startActivity(intent);
+			//finish();
+		}*/
+		try {
+
+			if (client.isConnected()) {
+				mRoster = client.getRoster();
+				ContactItem user;
+				for (RosterEntry e : mRoster.getEntries()) {
+					user = new ContactItem(e.getUser());
+					Presence presence = mRoster.getPresence(e.getUser());
+					user.setAvailable(presence.isAvailable());
+					user.setStatus(presence.getStatus());
+					contacts.add(user);
+
+				}
+
+				// fetch entries from db;
+				/*for (ContactItem con : contacts) {
+					try {
+						// Cursor c=mAdapter.fetchNote(con.getUser());
+						
+						String key =SecureSharedPrefAdapter.getKey(con.getUser());// mAdapter.getKey(con.getUser());
+						if (!key.isEmpty())
+							con.setKey(key);
+					} catch (SQLException s) {
+						Log.d(TAG, s.getMessage());
+					}
+				}
+				*/
+				mRoster.addRosterListener(this);
+				adapter.notifyDataSetChanged();
+
+			} else {
+
+				Toast toast = Toast.makeText(this, "not connected", 2000);
+				toast.setGravity(Gravity.TOP, -30, 50);
+				toast.show();
+			}
+
+		} catch (IllegalStateException e) {
+			e.printStackTrace();
+			Util.showToast(this, e.getMessage());
+		} catch (Exception e) {
+
+			e.printStackTrace();
+			Util.showToast(this, e.getMessage());
+		}
+		listContacts = (ListView) findViewById(R.id.listContacts);
+
+		listContacts.setAdapter(adapter);
+		listContacts.setOnItemClickListener(this);
+		listContacts.setOnItemLongClickListener(this);
+		handler = new Handler();
+	}
+
+	/* (non-Javadoc)
+	 * @see android.app.Activity#onDestroy()
+	 */
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+		super.onDestroy();
+		//mAdapter.close();
+	}
+
+	/* (non-Javadoc)
+	 * @see android.app.Activity#onResume()
+	 */
+	@Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+		client.getConnection().getChatManager().addChatListener(this);
+	}
+
+	/* (non-Javadoc)
+	 * @see android.app.Activity#onStart()
+	 */
+	@Override
+	protected void onStart() {
+		// TODO Auto-generated method stub
+		super.onStart();
+	}
+
+	/* (non-Javadoc)
+	 * @see android.app.Activity#onPause()
+	 */
+	@Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		super.onPause();
+		client.getConnection().getChatManager().removeChatListener(this);
+	}
+
+	/* (non-Javadoc)
+	 * @see android.app.Activity#onActivityResult(int, int, android.content.Intent)
+	 */
+	public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+		if (requestCode == 0) {
+			if (resultCode == RESULT_OK) {
+				String contents = intent.getStringExtra("SCAN_RESULT");
+				String format = intent.getStringExtra("SCAN_RESULT_FORMAT");
+				String content[] = contents.split("#");
+				if (content.length != 2) {
+					Toast.makeText(this, "Flascher QR-Code", Toast.LENGTH_LONG)
+							.show();
+					return;
+				}
+				for (ContactItem con : contacts) {
+					if (con.getUser().equals(content[0])) {
+						con.setKey(content[1]);
+						SecureSharedPrefAdapter.insertKey(content[0], content[1]);
+						/*
+						try {
+							if(mAdapter.createNote(content[0], content[1])==-1){
+								Toast.makeText(this,
+										"QR Code konnte nicht importiert werden",
+										Toast.LENGTH_LONG).show();
+							}
+						} catch (SQLException s) {
+							Toast.makeText(this,
+									"QR Code konnte nicht importiert werden",
+									Toast.LENGTH_LONG).show();
+						}*/
+					}
+				}
+				//Toast.makeText(this, format + contents, 2000).show();
+				// Handle successful scan
+			} else if (resultCode == RESULT_CANCELED) {
+				// Handle cancel
+			}
+		}
+	}
+
+	/* (non-Javadoc)
+	 * @see android.view.View.OnClickListener#onClick(android.view.View)
+	 */
+	public void onClick(View v) {
+
+		switch (v.getId()) {
+		case R.id.btImport:
+			Intent intent = new Intent("com.google.zxing.client.android.SCAN");
+			intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
+			startActivityForResult(intent, 0);
+			break;
+		case R.id.listContacts:
+			ContactItem contact = (ContactItem) listContacts.getSelectedItem();
+			Util.showToast(this, contact.getUser());
+			break;
+		default:
+			break;
+		}
+
+	}
+
+	/**
+	 * Show qr code.
+	 *
+	 * @param data the data
+	 */
+	public void showQrCode(String data) {
+		Intent intent = new Intent("com.google.zxing.client.android.ENCODE");
+		intent.putExtra("ENCODE_TYPE", "TEXT_TYPE");
+		intent.putExtra("ENCODE_DATA", data);
+		startActivity(intent);
+	}
+
+	/* (non-Javadoc)
+	 * @see android.widget.AdapterView.OnItemClickListener#onItemClick(android.widget.AdapterView, android.view.View, int, long)
+	 */
+	public void onItemClick(AdapterView<?> parent, View v, int pos, long arg3) {
+		switch (parent.getId()) {
+		case R.id.listContacts:
+			ContactItem contact = (ContactItem) listContacts
+					.getItemAtPosition(pos);
+			// client.sendMessage(contact.getUser(),
+			// "this is a secure message bitch!");
+			if (!contact.isAvailable()) {
+				break;
+			}
+			if (contact.getKey() == null) {
+
+				try {
+					String key = Util.getKey();
+					SecureSharedPrefAdapter.insertKey(contact.getUser(), key);
+					//mAdapter.createNote(contact.getUser(), key);
+					contact.setKey(Util.getKey());
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+					Toast.makeText(this,
+							"Password konnte nicht erzeugt werden", 5000);
+					return;
+				}
+			}
+			Intent intentChat = new Intent(this, Chat.class);
+			intentChat.putExtra("contact", contact);
+			// intentChat.putExtra("connection", gtalk);
+			startActivityForResult(intentChat, 0);
+			break;
+		default:
+			break;
+		}
+	}
+
+	/* (non-Javadoc)
+	 * @see android.widget.AdapterView.OnItemLongClickListener#onItemLongClick(android.widget.AdapterView, android.view.View, int, long)
+	 */
+	public boolean onItemLongClick(AdapterView<?> parent, View v, int pos,
+			long arg3) {
+		
+		String username=XMPPClient.getInstance().getConnection().getUser().split("/")[0];
+		switch (parent.getId()) {
+		case R.id.listContacts:
+			ContactItem contact = (ContactItem) listContacts
+					.getItemAtPosition(pos);
+			if (contact.getKey() != null)
+				showQrCode(username + "#" + contact.getKey());
+			else {
+				try {
+					String key = Util.getKey();
+					contact.setKey(key);
+					SecureSharedPrefAdapter.insertKey(contact.getUser(), key);
+					//mAdapter.createNote(contact.getUser(), key);
+					showQrCode(contact.getUser() + "#" + contact.getKey());
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+
+			}
+			return true;
+
+		default:
+			return false;
+
+		}
+	}
+
+	/* (non-Javadoc)
+	 * @see org.jivesoftware.smack.RosterListener#entriesAdded(java.util.Collection)
+	 */
+	@Override
+	public void entriesAdded(Collection<String> addresses) {
+		// TODO Auto-generated method stub
+
+	}
+
+	/* (non-Javadoc)
+	 * @see org.jivesoftware.smack.RosterListener#entriesDeleted(java.util.Collection)
+	 */
+	@Override
+	public void entriesDeleted(Collection<String> addresses) {
+		// TODO Auto-generated method stub
+
+	}
+
+	/* (non-Javadoc)
+	 * @see org.jivesoftware.smack.RosterListener#entriesUpdated(java.util.Collection)
+	 */
+	@Override
+	public void entriesUpdated(Collection<String> addresses) {
+		// TODO Auto-generated method stub
+
+	}
+
+	/* (non-Javadoc)
+	 * @see org.jivesoftware.smack.RosterListener#presenceChanged(org.jivesoftware.smack.packet.Presence)
+	 */
+	@Override
+	public void presenceChanged(Presence presence) {
+		// TODO Auto-generated method stub
+		String user = presence.getFrom();
+		// Presence bestPresence = mRoster.getPresence(user);
+		boolean online = presence.isAvailable();
+		for (ContactItem c : contacts) {
+			if (c.getUser().equals(user.split("/")[0])) {
+				c.setAvailable(online);
+				c.setStatus(online ? presence.getStatus() : "offline");
+			}
+		}
+		handler.post(new Runnable() {
+
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				adapter.notifyDataSetChanged();
+			}
+		});
+
+	}
+
+	/* (non-Javadoc)
+	 * @see org.jivesoftware.smack.ChatManagerListener#chatCreated(org.jivesoftware.smack.Chat, boolean)
+	 */
+	@Override
+	public void chatCreated(org.jivesoftware.smack.Chat chat,
+			boolean createdLocally) {
+		// TODO Auto-generated method stub
+		if (!createdLocally) {
+			chat.addMessageListener(new MessageListener() {
+				
+				@Override
+				public void processMessage(org.jivesoftware.smack.Chat _chat, Message _message) {
+					Intent intent = new Intent(SecureSMSActivity.this,Chat.class);
+					String sender=_message.getFrom().split("/")[0];
+					long time=System.currentTimeMillis();
+					String msg=_message.getBody();
+					String key="";
+					/*try {
+						// Cursor c=mAdapter.fetchNote(con.getUser());
+						/*key = mAdapter.getKey(sender);
+						key=SecureSharedPrefAdapter.getKey(sender);
+					} catch (SQLException s) {
+						Log.d(TAG, s.getMessage());
+					}*/
+					try {
+						msg = new String(
+								Util.decrypt(Util.toByte(key),Util.toByte(msg)));
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						Log.e(TAG, "decrytion failed");
+					}
+					ChatMessage message=new ChatMessage(sender, new Date(time), msg, false);
+					
+					for(ContactItem c:contacts){
+						if(c.getUser().equals(sender))
+							intent.putExtra("contact", c);
+					}
+					
+					intent.putExtra("chatmessage", message);
+					startActivity(intent);
+					
+				}
+			});
+		}
+	}
+
+}

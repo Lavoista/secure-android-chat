@@ -1,0 +1,12 @@
+{
+  "D:\\FH_DEV\\secure-android-chat\\xmppGateway\\lib\\smack.jar": {
+    "location": "D:\\FH_DEV\\secure-android-chat\\xmppGateway\\lib\\smack.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027D:\\FH_DEV\\secure-android-chat\\xmppGateway\\lib\\smack.jar\u0027. Neither fingerprint \u0027e68dbf75b96ecedc04aefa203749fd44c29855f7\u0027 nor symbolic name \u0027org.igniterealtime.smack\u0027 are known."
+  },
+  "C:\\Program Files\\Java\\jre7\\lib\\rt.jar": {
+    "coordinate": "jre:jre:zip:ovrm:1.0.0",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\rt.jar",
+    "status": "RESOLVED"
+  }
+}
