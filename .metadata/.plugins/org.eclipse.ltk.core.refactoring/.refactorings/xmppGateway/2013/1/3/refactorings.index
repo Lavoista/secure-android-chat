@@ -1,0 +1,7 @@
+1358245137571	Rename field 'mFrame'
+1358245142832	Rename field 'mPanel'
+1358245149328	Rename field 'm_Panel'
+1358245156082	Rename field 'm_Frame'
+1358245666028	Convert local variable 'lblXmppPanel' to field
+1358245695558	Convert local variable 'list' to field
+1358326031870	Delete element

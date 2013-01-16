@@ -1,3 +1,5 @@
+import java.awt.event.WindowEvent;
+
 import javax.swing.JFrame;
 import javax.swing.plaf.SliderUI;
 
@@ -11,24 +13,24 @@ import org.jivesoftware.smack.filter.PacketFilter;
 import org.jivesoftware.smack.packet.Packet;
 
 public class XmppGateway extends java.awt.event.WindowAdapter {
-	JFrame mFrame;
-	XmppPanel mPanel;
+	JFrame m_frame;
+	XmppPanel m_panel;
 	public XmppGateway() {
 		super();
 		initUI();
 	}
 	public void initUI() {
-		mFrame = new JFrame();
-		mFrame.setSize(800, 600);
-		mFrame.addWindowListener(this);
+		m_frame = new JFrame();
+		m_frame.setSize(800, 600);
+		m_frame.addWindowListener(this);
 		try{
-		mPanel= new XmppPanel();
+		m_panel= new XmppPanel();
 		}
 		catch(Exception _e){
 			_e.printStackTrace();
 		}
-		mFrame.add(mPanel);
-		mFrame.setVisible(true);
+		m_frame.add(m_panel);
+		m_frame.setVisible(true);
 	}
 	
 	/**
@@ -41,6 +43,13 @@ public class XmppGateway extends java.awt.event.WindowAdapter {
 		
 		XmppGateway xmpp = new XmppGateway();
 		
+		
+	} 
+	@Override
+	public void windowClosing(WindowEvent e) {
+		// TODO Auto-generated method stub
+		super.windowClosing(e);
+		m_panel.disconnect();
 		
 	}
 

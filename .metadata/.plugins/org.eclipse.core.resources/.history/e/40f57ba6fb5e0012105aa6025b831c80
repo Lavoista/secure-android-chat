@@ -1,0 +1,50 @@
+import java.util.HashMap;
+import java.util.Map.Entry;
+
+import javax.swing.JPanel;
+
+import org.jivesoftware.smack.Connection;
+import org.jivesoftware.smack.ConnectionCreationListener;
+import org.jivesoftware.smack.XMPPException;
+
+
+public class XmppPanel extends JPanel {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5657339239939443076L;
+	private HashMap<String, Connection> m_connections= new HashMap<>();
+	private HashMap<String, String> m_accounts= new HashMap<>();
+	public XmppPanel() {
+		m_accounts.put("sip_gateway1" , "sip_gateway1");
+		m_accounts.put("sip_gateway2" , "sip_gateway2");
+		Connection conn = new WTFConnection();
+	
+		
+		try {
+			conn.connect();
+			conn.login("sip_gateway1", "sip_gateway1");
+			WTFConnection.addConnectionCreationListener(new ConnectionCreationListener() {
+				
+				@Override
+				public void connectionCreated(Connection _conn) {
+					System.out.println(_conn.getConnectionID());
+				}
+			});
+			XmppConnectionHandler handler = new XmppConnectionHandler(conn);
+		} catch (XMPPException e) {
+			System.err.println("connection exception");
+			e.printStackTrace();
+		}
+	}
+	public void connect(){
+		Connection conn;
+		for(Entry<String, String> e:m_accounts.entrySet()){
+			conn=new WTFConnection();
+			conn.connect();
+			conn.login(e.getKey(), e.getValue());
+		}
+	}
+
+}
