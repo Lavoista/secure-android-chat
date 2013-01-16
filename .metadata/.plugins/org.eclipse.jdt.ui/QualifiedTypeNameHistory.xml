@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="javax.swing.plaf.SliderUI"/>
 <fullyQualifiedTypeName name="javax.swing.JPanel"/>
 <fullyQualifiedTypeName name="javax.swing.JFrame"/>
 <fullyQualifiedTypeName name="XmppGateway"/>
-<fullyQualifiedTypeName name="org.jivesoftware.smack.XMPPConnection"/>
 <fullyQualifiedTypeName name="org.jivesoftware.smack.ConnectionListener"/>
-<fullyQualifiedTypeName name="org.jivesoftware.smack.PacketListener"/>
-<fullyQualifiedTypeName name="org.jivesoftware.smack.ConnectionCreationListener"/>
-<fullyQualifiedTypeName name="XmppPanel"/>
 <fullyQualifiedTypeName name="java.awt.TrayIcon.MessageType"/>
 <fullyQualifiedTypeName name="org.jivesoftware.smack.packet.Message.Type"/>
 <fullyQualifiedTypeName name="org.jivesoftware.smack.packet.Packet"/>
@@ -25,15 +20,24 @@
 <fullyQualifiedTypeName name="javax.swing.JScrollPane"/>
 <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
 <fullyQualifiedTypeName name="javax.swing.JTextArea"/>
-<fullyQualifiedTypeName name="java.lang.Runnable"/>
 <fullyQualifiedTypeName name="javax.swing.JTabbedPane"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
-<fullyQualifiedTypeName name="java.util.Map.Entry"/>
 <fullyQualifiedTypeName name="org.jivesoftware.smack.filter.MessageTypeFilter"/>
 <fullyQualifiedTypeName name="org.jivesoftware.smack.filter.PacketFilter"/>
-<fullyQualifiedTypeName name="org.jivesoftware.smack.Connection"/>
 <fullyQualifiedTypeName name="javax.swing.DefaultListModel"/>
+<fullyQualifiedTypeName name="org.jivesoftware.smack.packet.Presence"/>
+<fullyQualifiedTypeName name="org.jivesoftware.smack.packet.Presence.Type"/>
+<fullyQualifiedTypeName name="org.jivesoftware.smack.ConnectionConfiguration"/>
+<fullyQualifiedTypeName name="javax.net.SocketFactory"/>
+<fullyQualifiedTypeName name="org.jivesoftware.smack.XMPPConnection"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="org.jivesoftware.smack.Connection"/>
+<fullyQualifiedTypeName name="org.jivesoftware.smack.ConnectionCreationListener"/>
 <fullyQualifiedTypeName name="WTFConnection"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="XmppPanel"/>
+<fullyQualifiedTypeName name="org.jivesoftware.smack.PacketListener"/>
 </qualifiedTypeNameHistroy>

@@ -18,5 +18,10 @@
     "location": "C:\\Users\\ckies_000\\android-sdks\\platforms\\android-10\\android.jar",
     "status": "UNRESOLVED",
     "error": "No call model found for \u0027C:\\Users\\ckies_000\\android-sdks\\platforms\\android-10\\android.jar\u0027. Neither fingerprint \u0027b50d42b32e1d8a6c2d5f19a846474d5e2199c68e\u0027 nor symbolic name \u0027android\u0027 are known."
+  },
+  "D:\\FH_DEV\\secure-android-chat\\secureSMS\\libs\\asmack-android-7-beem.jar": {
+    "location": "D:\\FH_DEV\\secure-android-chat\\secureSMS\\libs\\asmack-android-7-beem.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027D:\\FH_DEV\\secure-android-chat\\secureSMS\\libs\\asmack-android-7-beem.jar\u0027. Neither fingerprint \u0027cf72debe44c8d4494211759ec0f7745f75fc8dd1\u0027 nor symbolic name \u0027asmack-android-7-beem\u0027 are known."
   }
 }

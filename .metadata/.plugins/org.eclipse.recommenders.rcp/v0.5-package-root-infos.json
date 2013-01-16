@@ -150,9 +150,9 @@
       "micro": 0,
       "qualifier": ""
     },
-    "jarFileFingerprint": "a3d1a9689f1c8e36ab64fb669df92076771c42f2",
-    "jarFileModificationDate": "2012-12-02T13:44:32.401+01:00",
-    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\sunmscapi.jar",
+    "jarFileFingerprint": "d8337a8a0d2e7f6e75e98344615bc22999a9098c",
+    "jarFileModificationDate": "2012-12-02T13:44:34.911+01:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\charsets.jar",
     "javaRuntime": true
   },
   {
@@ -163,9 +163,9 @@
       "micro": 0,
       "qualifier": ""
     },
-    "jarFileFingerprint": "d8337a8a0d2e7f6e75e98344615bc22999a9098c",
-    "jarFileModificationDate": "2012-12-02T13:44:34.911+01:00",
-    "location": "C:\\Program Files\\Java\\jre7\\lib\\charsets.jar",
+    "jarFileFingerprint": "a3d1a9689f1c8e36ab64fb669df92076771c42f2",
+    "jarFileModificationDate": "2012-12-02T13:44:32.401+01:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\sunmscapi.jar",
     "javaRuntime": true
   },
   {
@@ -189,9 +189,9 @@
       "micro": 0,
       "qualifier": ""
     },
-    "jarFileFingerprint": "cf4437b2a4a56b938f2af9da2b4368076ae51344",
-    "jarFileModificationDate": "2012-12-02T13:44:32.357+01:00",
-    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\jaccess.jar",
+    "jarFileFingerprint": "58a896c7e7718bc91efd3ae469fbb378da247feb",
+    "jarFileModificationDate": "2012-12-02T13:44:32.439+01:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\jfr.jar",
     "javaRuntime": true
   },
   {
@@ -202,23 +202,10 @@
       "micro": 0,
       "qualifier": ""
     },
-    "jarFileFingerprint": "58a896c7e7718bc91efd3ae469fbb378da247feb",
-    "jarFileModificationDate": "2012-12-02T13:44:32.439+01:00",
-    "location": "C:\\Program Files\\Java\\jre7\\lib\\jfr.jar",
+    "jarFileFingerprint": "cf4437b2a4a56b938f2af9da2b4368076ae51344",
+    "jarFileModificationDate": "2012-12-02T13:44:32.357+01:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\jaccess.jar",
     "javaRuntime": true
-  },
-  {
-    "symbolicName": "sqlcipher",
-    "version": {
-      "major": -1,
-      "minor": -1,
-      "micro": -1,
-      "qualifier": ""
-    },
-    "jarFileFingerprint": "f53e7a5a6906eb8d00df7e8d05564baba6eba1af",
-    "jarFileModificationDate": "2012-12-06T14:06:35.779+01:00",
-    "location": "D:\\FH_DEV\\secure-android-chat\\secureSMS\\libs\\sqlcipher.jar",
-    "javaRuntime": false
   },
   {
     "symbolicName": "org.igniterealtime.smack",
@@ -234,17 +221,17 @@
     "javaRuntime": false
   },
   {
-    "symbolicName": "jre",
+    "symbolicName": "sqlcipher",
     "version": {
-      "major": 1,
-      "minor": 0,
-      "micro": 0,
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
       "qualifier": ""
     },
-    "jarFileFingerprint": "7deb3869b318eee5287add05ab0b5c7e3acaf766",
-    "jarFileModificationDate": "2012-12-02T13:44:34.829+01:00",
-    "location": "C:\\Program Files\\Java\\jre7\\lib\\rt.jar",
-    "javaRuntime": true
+    "jarFileFingerprint": "f53e7a5a6906eb8d00df7e8d05564baba6eba1af",
+    "jarFileModificationDate": "2012-12-06T14:06:35.779+01:00",
+    "location": "D:\\FH_DEV\\secure-android-chat\\secureSMS\\libs\\sqlcipher.jar",
+    "javaRuntime": false
   },
   {
     "symbolicName": "asmack-android-7-beem",
@@ -258,6 +245,19 @@
     "jarFileModificationDate": "2012-12-06T14:06:35.708+01:00",
     "location": "D:\\FH_DEV\\secure-android-chat\\secureSMS\\libs\\asmack-android-7-beem.jar",
     "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7deb3869b318eee5287add05ab0b5c7e3acaf766",
+    "jarFileModificationDate": "2012-12-02T13:44:34.829+01:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\rt.jar",
+    "javaRuntime": true
   },
   {
     "symbolicName": "jre",

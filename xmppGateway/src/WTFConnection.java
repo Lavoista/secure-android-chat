@@ -8,10 +8,15 @@ public class WTFConnection extends XMPPConnection{
 		super(config);
 		// TODO Auto-generated constructor stub
 	}
-
+	public WTFConnection(String server){
+		//super("wtfismyip.com");
+		super(server);
+		//super("blah.at");
+		//super("jabber.blah.at");
+	}
 	public WTFConnection(){
-		super("wtfismyip.com");
-		//super("jabber.org");
+		//super("wtfismyip.com");
+		super("jabber.org");
 		//super("blah.at");
 		//super("jabber.blah.at");
 	}

@@ -5,3 +5,4 @@
 1358245666028	Convert local variable 'lblXmppPanel' to field
 1358245695558	Convert local variable 'list' to field
 1358326031870	Delete element
+1358348664156	Convert local variable 'config' to field
