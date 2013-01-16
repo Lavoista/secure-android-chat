@@ -1,0 +1,19 @@
+
+import org.jivesoftware.smack.XMPPConnection;
+
+public class WTFConnection extends XMPPConnection{
+
+	public WTFConnection(){
+		//super("wtfismyip.com");
+		//super("jabber.org");
+		//super("blah.at");
+		super("jabber.blah.at");
+	}
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		
+		return getUser();
+	}
+
+}

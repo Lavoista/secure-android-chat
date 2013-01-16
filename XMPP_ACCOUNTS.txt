@@ -3,3 +3,12 @@ sip_gateway2 pw:sip_gateway2 wtfismyip.com
 
 sip_user1 pw:sip_user1
 sip_user2 pw:sip_user2
+
+
+sip_berni@jabber.org sip_berni
+
+sip_berni_gw@jabber.org
+
+sip_patrick_gw@jabber.org
+
+sip_patrick@jabber.org

@@ -103,7 +103,7 @@ public class SecureSMSActivity extends Activity implements OnClickListener,
 				for (RosterEntry e : mRoster.getEntries()) {
 					user = new ContactItem(e.getUser());
 					Presence presence = mRoster.getPresence(e.getUser());
-					user.setAvailable(presence.isAvailable());
+					user.setAvailable(true);
 					user.setStatus(presence.getStatus());
 					contacts.add(user);
 

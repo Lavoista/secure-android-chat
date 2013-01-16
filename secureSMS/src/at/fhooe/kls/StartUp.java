@@ -79,7 +79,10 @@ public class StartUp extends Activity {
 			if (tm.getDeviceId().equals("351554050051631")) {
 				USERNAME = "sip_gateway1";
 				PASSWORD = "sip_gateway1";
-			} else {
+			} else if(tm.getDeviceId().equals("351554050395848")){
+				USERNAME="sip_user1";
+				PASSWORD="sip_user1";
+			}else {//Schoelli 351554050395848
 				USERNAME = "sip_gateway2";
 				PASSWORD = "sip_gateway2";
 			}

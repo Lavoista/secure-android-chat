@@ -17,6 +17,7 @@ public class XmppGateway extends java.awt.event.WindowAdapter {
 	XmppPanel m_panel;
 	public XmppGateway() {
 		super();
+		System.out.println("Gateway started");
 		initUI();
 	}
 	public void initUI() {

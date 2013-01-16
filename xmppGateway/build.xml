@@ -1,0 +1,61 @@
+<project name="XMPPGateway" default="dist" basedir=".">
+    <description>
+        simple example build file
+    </description>
+  <!-- set global properties for this build -->
+   <property
+        name="build.dir"
+        value="." />
+  <property
+        name="src.dir"
+        value="${build.dir}/src" />
+  <property
+        name="bin.dir"
+        value="${build.dir}/bin" />
+  <property
+        name="lib.dir"
+        value="${build.dir}/lib" />
+
+  <path id="class.path" >
+    <fileset dir="${lib.dir}" >
+      <include name="**/*.jar" />
+    </fileset>
+  </path>
+  <target
+        name="build"
+        depends="init"
+        description="Builds the project using javac" >
+    <javac
+            destdir="${bin.dir}"
+            encoding="Cp1252"
+            includeantruntime="false"
+            srcdir="${src.dir}" >
+      <classpath refid="class.path" />
+    </javac>
+  </target>
+  <target
+        name="init"
+        description="Creates directories" >
+    <mkdir dir="${bin.dir}" />
+  </target>
+  <target
+        name="run"
+        description="Runs the project" >
+    <java
+            classname="XmppGateway"
+            classpath="${bin.dir}"
+            failonerror="yes"
+            fork="true" >
+      <classpath refid="class.path" />
+      <arg line="" />
+    </java>
+  </target>
+  <target name="jar" depends="build">
+    <jar destfile="CAS.jar" basedir="${bin.dir}">
+      <manifest>
+        <attribute name="Main-Class" value="XmppGateway"/>
+        <attribute name="Class-Path" value="class.path"/>
+      </manifest>
+    </jar>
+  </target>
+</project>

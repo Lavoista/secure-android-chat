@@ -72,9 +72,15 @@ public class XMPPClient {
 	 * @param text the text
 	 */
 	public void sendMessage(String to, String text) {
+		try{
 		Message msg = new Message(to, Message.Type.chat);
 		msg.setBody(text);
 		conn.sendPacket(msg);
+		}
+		catch(Exception e){
+			e.printStackTrace();
+			Log.e("WLM", e.getMessage());
+		}
 	}
 
 	/**

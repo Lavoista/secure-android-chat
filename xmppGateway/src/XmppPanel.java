@@ -1,29 +1,24 @@
+import java.awt.FlowLayout;
 import java.util.HashMap;
 import java.util.Map.Entry;
 
-import javax.swing.JPanel;
-
-import org.jivesoftware.smack.Connection;
-import org.jivesoftware.smack.ConnectionCreationListener;
-import org.jivesoftware.smack.ConnectionListener;
-import org.jivesoftware.smack.PacketListener;
-import org.jivesoftware.smack.XMPPException;
-import org.jivesoftware.smack.filter.MessageTypeFilter;
-import org.jivesoftware.smack.filter.PacketFilter;
-import org.jivesoftware.smack.packet.Message;
-import org.jivesoftware.smack.packet.Packet;
-import org.jivesoftware.smack.packet.Message.Type;
-
+import javax.net.SocketFactory;
 import javax.swing.DefaultListModel;
 import javax.swing.JLabel;
-import javax.swing.JScrollPane;
 import javax.swing.JList;
-import java.awt.FlowLayout;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
-import java.awt.Component;
-import javax.swing.Box;
-import java.awt.GridLayout;
-import java.awt.BorderLayout;
+
+import org.jivesoftware.smack.ConnectionConfiguration;
+import org.jivesoftware.smack.ConnectionListener;
+import org.jivesoftware.smack.PacketListener;
+import org.jivesoftware.smack.XMPPConnection;
+import org.jivesoftware.smack.XMPPException;
+import org.jivesoftware.smack.filter.MessageTypeFilter;
+import org.jivesoftware.smack.packet.Message;
+import org.jivesoftware.smack.packet.Message.Type;
+import org.jivesoftware.smack.packet.Packet;
 
 public class XmppPanel extends JPanel implements ConnectionListener,PacketListener {
 
@@ -33,6 +28,7 @@ public class XmppPanel extends JPanel implements ConnectionListener,PacketListen
 	private static final long serialVersionUID = 5657339239939443076L;
 	private HashMap<String, WTFConnection> m_connections = new HashMap<>();
 	private HashMap<String, String> m_accounts = new HashMap<>();
+	private HashMap<String, String> m_relation = new HashMap<>();
 	private JList m_connectionList;
 	private JTextArea m_logArea;
 	private JScrollPane scrollPane_2;
@@ -40,6 +36,7 @@ public class XmppPanel extends JPanel implements ConnectionListener,PacketListen
 	private JLabel lblXmppConnections;
 	private JLabel label;
 	private JLabel label_1;
+	private ConnectionConfiguration xmppConfig;
 
 	public XmppPanel() {
 		setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
@@ -69,13 +66,27 @@ public class XmppPanel extends JPanel implements ConnectionListener,PacketListen
 		m_accounts.put("sip_gateway1", "sip_gateway1");
 		m_accounts.put("sip_gateway2", "sip_gateway2");
 		
+		m_relation.put("sip_gateway1", "berni");
+		m_relation.put("sip_gateway2", "patrick");
+		//m_accounts.put("sip_berni_gw","sip_berni_gw");
+		//m_accounts.put("sip_patrick_gw","sip_patrick_gw");
+		//m_accounts.put("sip_berni", "sip_berni");
+		
+		
+		 xmppConfig = new ConnectionConfiguration("jabber.org", 5222);
+         xmppConfig.setSecurityMode(ConnectionConfiguration.SecurityMode.enabled);
+         xmppConfig.setSocketFactory(SocketFactory.getDefault());
+		
 		connect();
 	}
 
 	public void connect() {
+		System.out.println("start connect");
 		WTFConnection conn;
 		for (Entry<String, String> e : m_accounts.entrySet()) {
 			try {
+				
+				//conn = new WTFConnection(xmppConfig);
 				conn = new WTFConnection();
 				conn.connect();
 				conn.login(e.getKey(), e.getValue());
@@ -87,8 +98,10 @@ public class XmppPanel extends JPanel implements ConnectionListener,PacketListen
 				System.err.println("connection exception");
 				_e.printStackTrace();
 			}
+			System.out.println("connected"+e.getKey());
 		}
 		m_connectionList.updateUI();
+		System.out.println("connect finished");
 	}
 	public void disconnect(){
 		for (Entry<String, WTFConnection> e : m_connections.entrySet()) {
@@ -106,15 +119,21 @@ public class XmppPanel extends JPanel implements ConnectionListener,PacketListen
 		//System.out.println(_packet.toXML());
 		printPacket(_packet);
 	}
+	
 	public void printPacket(Packet _packet){
 		if (!(_packet instanceof Message)){
 			return;
 		}
 		Message msg=(Message)_packet;
-	
+		
 		String p=String.format("from:%s to:%s message:%s\n",msg.getFrom(),msg.getTo(),msg.getBody());
 		m_logArea.append(p);
 		m_logArea.notifyAll();
+		Server.handleXMPPMessage(msg.getFrom(),msg.getTo(),msg.getBody());
+		
+	}
+	public void handleSIPMessage(String from,String to,String msg){
+		
 	}
 
 	@Override
