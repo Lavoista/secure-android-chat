@@ -10,7 +10,6 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 
-import org.jivesoftware.smack.Connection;
 import org.jivesoftware.smack.ConnectionConfiguration;
 import org.jivesoftware.smack.ConnectionListener;
 import org.jivesoftware.smack.PacketListener;
@@ -20,8 +19,6 @@ import org.jivesoftware.smack.filter.MessageTypeFilter;
 import org.jivesoftware.smack.packet.Message;
 import org.jivesoftware.smack.packet.Message.Type;
 import org.jivesoftware.smack.packet.Packet;
-
-import android.util.Log;
 
 public class XmppPanel extends JPanel implements ConnectionListener,PacketListener {
 
@@ -129,10 +126,6 @@ public class XmppPanel extends JPanel implements ConnectionListener,PacketListen
 		}
 		Message msg=(Message)_packet;
 		String to=m_relation.get(msg.getTo());
-		if(to==null){
-			m_logArea.append("No relation found for: "+msg.getTo());
-			return;
-		}
 		String p=String.format("from:%s to:%s sip:(%s)\n\tmessage:%s\n",msg.getFrom(),msg.getTo(),to,msg.getBody());
 		m_logArea.append(p);
 		m_logArea.notifyAll();
@@ -141,15 +134,7 @@ public class XmppPanel extends JPanel implements ConnectionListener,PacketListen
 		
 	}
 	public void handleSIPMessage(String from,String to,String msg){
-		Connection conn=m_connections.get(to);
-		try{
-			Message message = new Message(to, Message.Type.chat);
-			message.setBody(msg);
-			conn.sendPacket(message);
-			}
-			catch(Exception e){
-				e.printStackTrace();
-			}
+		
 	}
 
 	@Override

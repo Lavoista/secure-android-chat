@@ -149,6 +149,7 @@ public class XmppPanel extends JPanel implements ConnectionListener,PacketListen
 			}
 			catch(Exception e){
 				e.printStackTrace();
+				Log.e("WLM", e.getMessage());
 			}
 	}
 

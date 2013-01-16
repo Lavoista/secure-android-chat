@@ -143,12 +143,13 @@ public class XmppPanel extends JPanel implements ConnectionListener,PacketListen
 	public void handleSIPMessage(String from,String to,String msg){
 		Connection conn=m_connections.get(to);
 		try{
-			Message message = new Message(to, Message.Type.chat);
-			message.setBody(msg);
-			conn.sendPacket(message);
+			Message msg = new Message(to, Message.Type.chat);
+			msg.setBody(text);
+			conn.sendPacket(msg);
 			}
 			catch(Exception e){
 				e.printStackTrace();
+				Log.e("WLM", e.getMessage());
 			}
 	}
 
