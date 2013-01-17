@@ -253,6 +253,15 @@ public class XmppPanel extends JPanel implements ConnectionListener,
 	 * @param msg the message
 	 */
 	public void handleSIPMessage(String from, String to, String msg) {
+		StringBuffer sb= new StringBuffer();
+		sb.append("new sip: from: ");
+		sb.append(from);
+		sb.append(" to: ");
+		sb.append(to);
+		sb.append("\n\t");
+		sb.append("msg: ");
+		sb.append(msg);
+		m_logArea.append(sb.toString());
 		String fromUser =m_relation_out.get(from);
 		Connection conn = m_connections.get(fromUser);
 		try {
