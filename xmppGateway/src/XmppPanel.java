@@ -31,7 +31,8 @@ public class XmppPanel extends JPanel implements ConnectionListener,
 	private static final long serialVersionUID = 5657339239939443076L;
 	private HashMap<String, WTFConnection> m_connections = new HashMap<>();
 	private HashMap<String, String> m_accounts = new HashMap<>();
-	private HashMap<String, String> m_relation = new HashMap<>();
+	private HashMap<String, String> m_relation_in = new HashMap<>();
+	private HashMap<String, String> m_relation_out = new HashMap<>();
 	private JList m_connectionList;
 	private JTextArea m_logArea;
 	private JScrollPane scrollPane_2;
@@ -60,8 +61,8 @@ public class XmppPanel extends JPanel implements ConnectionListener,
 
 		m_logArea = new JTextArea();
 		scrollPane_2.setViewportView(m_logArea);
-		m_logArea.setRows(10);
-		m_logArea.setColumns(60);
+		m_logArea.setRows(20);
+		m_logArea.setColumns(40);
 
 		label = new JLabel("");
 		add(label);
@@ -71,12 +72,17 @@ public class XmppPanel extends JPanel implements ConnectionListener,
 		// m_accounts.put("sip_gateway1", "sip_gateway1");
 		// m_accounts.put("sip_gateway2", "sip_gateway2");
 
-		// m_relation.put("sip_gateway1", "Berni");
-		// m_relation.put("sip_gateway2", "Patrick");
+		m_relation_in.put("sip_berni_gw", "Berni");
+		m_relation_in.put("sip_patrick_gw", "Patrick");
+		
+		
+		m_relation_out.put("Berni", "sip_berni_gw");
+		m_relation_out.put("Patrick", "sip_patrick_gw");
+		
 		m_accounts.put("sip_berni_gw", "sip_berni_gw");
 		m_accounts.put("sip_patrick_gw", "sip_patrick_gw");
-		m_accounts.put("sip_berni", "sip_berni");
-		m_accounts.put("sip_patrick", "sip_patrick");
+		//m_accounts.put("sip_berni", "sip_berni");
+		//m_accounts.put("sip_patrick", "sip_patrick");
 		xmppConfig = new ConnectionConfiguration("jabber.org", 5222);
 		xmppConfig
 				.setSecurityMode(ConnectionConfiguration.SecurityMode.enabled);
@@ -169,7 +175,7 @@ public class XmppPanel extends JPanel implements ConnectionListener,
 		Message msg = (Message) _packet;
 		if(msg.getBody()==null)
 			return;
-		String to = m_relation.get(msg.getTo());
+		String to = m_relation_in.get(msg.getTo().split("@")[0]);
 		if (to == null) {
 			m_logArea.append("No relation found for: " + msg.getTo()+"message: "+msg.getBody()+"\n");
 			return;
@@ -180,13 +186,15 @@ public class XmppPanel extends JPanel implements ConnectionListener,
 		m_logArea.append(p);
 		m_logArea.notifyAll();
 
-		// Server.handleXMPPMessage(msg.getFrom(),m_relation.get(msg.getTo()),msg.getBody());
+		Server.handleXMPPMessage(msg.getFrom(),to,msg.getBody());
 
 	}
 
 	public void handleSIPMessage(String from, String to, String msg) {
-		Connection conn = m_connections.get(to);
+		String fromUser =m_relation_out.get(from);
+		Connection conn = m_connections.get(fromUser);
 		try {
+			to+="@twattle.net";
 			Message message = new Message(to, Message.Type.chat);
 			message.setBody(msg);
 			conn.sendPacket(message);

@@ -22,7 +22,7 @@ public class XmppGateway extends java.awt.event.WindowAdapter {
 	}
 	public void initUI() {
 		m_frame = new JFrame();
-		m_frame.setSize(800, 600);
+		m_frame.setSize(500, 550);
 		m_frame.addWindowListener(this);
 		try{
 		m_panel= new XmppPanel();
