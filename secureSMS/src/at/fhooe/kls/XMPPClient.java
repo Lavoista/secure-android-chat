@@ -1,5 +1,6 @@
 package at.fhooe.kls;
 
+import org.jivesoftware.smack.ConnectionConfiguration;
 import org.jivesoftware.smack.Roster;
 import org.jivesoftware.smack.XMPPConnection;
 import org.jivesoftware.smack.XMPPException;
@@ -28,9 +29,16 @@ public class XMPPClient {
 	 */
 	public boolean login(String _user, String _pass) {
 		try {
-			conn = new XMPPConnection("wtfismyip.com");
+			XMPPConnection.DEBUG_ENABLED=true;
+			conn = new XMPPConnection(new ConnectionConfiguration("twattle.net", 5222));
+             
 			conn.connect();
-
+//			try {
+//				Thread.sleep(10000);
+//			} catch (InterruptedException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
 			// We do not need user name in this case.
 			conn.login(_user, _pass);
 			XMPPLogic.getInstance().setConnection(conn);

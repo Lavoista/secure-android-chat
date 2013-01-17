@@ -77,20 +77,22 @@ public class StartUp extends Activity {
 			final TelephonyManager tm = (TelephonyManager) getBaseContext()
 					.getSystemService(Context.TELEPHONY_SERVICE);
 			if (tm.getDeviceId().equals("351554050051631")) {
-				USERNAME = "sip_gateway1";
-				PASSWORD = "sip_gateway1";
+				USERNAME = "mustertest2011@gmail.com";
+				PASSWORD = "muster1234";
 			} else if(tm.getDeviceId().equals("351554050395848")){
-				USERNAME="sip_user1";
-				PASSWORD="sip_user1";
+				USERNAME = "sip_b";
+				PASSWORD = "muster1234";
 			}else {//Schoelli 351554050395848
-				USERNAME = "sip_gateway2";
-				PASSWORD = "sip_gateway2";
+				USERNAME = "mustertest2011@gmail.com";
+				PASSWORD = "muster1234";
 			}
+			USERNAME = "sip_berni";
+			PASSWORD = "sip_berni";
 
 		}
 
 		final SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
-		final String email = settings.getString("email", "empty");
+		final String email = "empty";//settings.getString("email", "empty");
 		if (email.equals("empty")) {
 			state = States.LOGIN;
 			setContentView(R.layout.login);

@@ -269,8 +269,10 @@ public class XmppPanel extends JPanel implements ConnectionListener,
 			Message message = new Message(to, Message.Type.chat);
 			message.setBody(msg);
 			conn.sendPacket(message);
+			m_logArea.append("message sent to: "+to);
 		} catch (Exception e) {
 			e.printStackTrace();
+			m_logArea.append(e.getMessage());
 		}
 	}
 

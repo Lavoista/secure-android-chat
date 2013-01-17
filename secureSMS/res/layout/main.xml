@@ -7,16 +7,18 @@
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-     
+        android:layout_height="wrap_content"
+        android:visibility="invisible" >
 
         <Button
             android:id="@+id/btImport"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:text="	import" android:drawableLeft="@drawable/qr"/>
+            android:drawableLeft="@drawable/qr"
+            android:text="	import"
+            android:visibility="invisible" />
+
     </LinearLayout>
 
     <ListView

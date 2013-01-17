@@ -7,8 +7,14 @@
     <RelativeLayout
         android:id="@+id/relativeLayout1"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent" >
-
+        android:layout_height="fill_parent">
+
+
+
+
+
+
+
         <EditText
             android:id="@+id/edPassword"
             android:layout_width="fill_parent"
@@ -19,7 +25,8 @@
 
             <requestFocus />
         </EditText>
-
+
+
         <Button
             android:id="@+id/btGo"
             android:layout_width="wrap_content"

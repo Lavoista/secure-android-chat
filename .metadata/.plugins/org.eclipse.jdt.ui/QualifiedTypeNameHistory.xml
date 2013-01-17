@@ -29,7 +29,6 @@
 <fullyQualifiedTypeName name="org.jivesoftware.smack.packet.Presence.Type"/>
 <fullyQualifiedTypeName name="org.jivesoftware.smack.ConnectionConfiguration"/>
 <fullyQualifiedTypeName name="javax.net.SocketFactory"/>
-<fullyQualifiedTypeName name="org.jivesoftware.smack.XMPPConnection"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.Map.Entry"/>
 <fullyQualifiedTypeName name="org.jivesoftware.smack.Connection"/>
@@ -40,4 +39,6 @@
 <fullyQualifiedTypeName name="java.lang.Runnable"/>
 <fullyQualifiedTypeName name="XmppPanel"/>
 <fullyQualifiedTypeName name="org.jivesoftware.smack.PacketListener"/>
+<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+<fullyQualifiedTypeName name="org.jivesoftware.smack.XMPPConnection"/>
 </qualifiedTypeNameHistroy>

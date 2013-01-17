@@ -234,19 +234,6 @@
     "javaRuntime": false
   },
   {
-    "symbolicName": "asmack-android-7-beem",
-    "version": {
-      "major": -1,
-      "minor": -1,
-      "micro": -1,
-      "qualifier": ""
-    },
-    "jarFileFingerprint": "cf72debe44c8d4494211759ec0f7745f75fc8dd1",
-    "jarFileModificationDate": "2012-12-06T14:06:35.708+01:00",
-    "location": "D:\\FH_DEV\\secure-android-chat\\secureSMS\\libs\\asmack-android-7-beem.jar",
-    "javaRuntime": false
-  },
-  {
     "symbolicName": "jre",
     "version": {
       "major": 1,
