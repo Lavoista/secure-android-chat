@@ -22,28 +22,61 @@ import org.jivesoftware.smack.packet.Message;
 import org.jivesoftware.smack.packet.Message.Type;
 import org.jivesoftware.smack.packet.Packet;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class XmppPanel.
+ */
 public class XmppPanel extends JPanel implements ConnectionListener,
 		PacketListener {
 
-	/**
-	 * 
-	 */
+	/** The Constant serialVersionUID. */
 	private static final long serialVersionUID = 5657339239939443076L;
+	
+	/** The m_connections. */
 	private HashMap<String, WTFConnection> m_connections = new HashMap<>();
+	
+	/** The m_accounts. */
 	private HashMap<String, String> m_accounts = new HashMap<>();
+	
+	/** The m_relation_in. */
 	private HashMap<String, String> m_relation_in = new HashMap<>();
+	
+	/** The m_relation_out. */
 	private HashMap<String, String> m_relation_out = new HashMap<>();
+	
+	/** The m_connection list. */
 	private JList m_connectionList;
+	
+	/** The m_log area. */
 	private JTextArea m_logArea;
+	
+	/** The scroll pane_2. */
 	private JScrollPane scrollPane_2;
+	
+	/** The m_list model. */
 	private DefaultListModel<WTFConnection> m_listModel;
+	
+	/** The lbl xmpp connections. */
 	private JLabel lblXmppConnections;
+	
+	/** The label. */
 	private JLabel label;
+	
+	/** The label_1. */
 	private JLabel label_1;
+	
+	/** The xmpp config. */
 	private ConnectionConfiguration xmppConfig;
+	
+	/** The m_config. */
 	private ConnectionConfiguration m_config;
+	
+	/** The Constant DELAY. */
 	private static final int DELAY = 1000;
 
+	/**
+	 * Instantiates a new xmpp panel.
+	 */
 	public XmppPanel() {
 		setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 
@@ -83,10 +116,7 @@ public class XmppPanel extends JPanel implements ConnectionListener,
 		m_accounts.put("sip_patrick_gw", "sip_patrick_gw");
 		//m_accounts.put("sip_berni", "sip_berni");
 		//m_accounts.put("sip_patrick", "sip_patrick");
-		xmppConfig = new ConnectionConfiguration("jabber.org", 5222);
-		xmppConfig
-				.setSecurityMode(ConnectionConfiguration.SecurityMode.enabled);
-		xmppConfig.setSocketFactory(SocketFactory.getDefault());
+		
 		m_config = new ConnectionConfiguration("twattle.net", 5222, "xmppgw");
 		//m_config.setCompressionEnabled(false);
 		//m_config.setSASLAuthenticationEnabled(false);
@@ -104,6 +134,9 @@ public class XmppPanel extends JPanel implements ConnectionListener,
 
 	}
 
+	/**
+	 * Connect all the gateway clients
+	 */
 	public void connect() {
 		System.out.println("start connect");
 		
@@ -151,6 +184,9 @@ public class XmppPanel extends JPanel implements ConnectionListener,
 		System.out.println("connect finished");
 	}
 
+	/**
+	 * Disconnect the gateway clients
+	 */
 	public void disconnect() {
 		for (Entry<String, WTFConnection> e : m_connections.entrySet()) {
 			try {
@@ -162,19 +198,41 @@ public class XmppPanel extends JPanel implements ConnectionListener,
 		}
 	}
 
+	/* (non-Javadoc)
+	 * @see org.jivesoftware.smack.PacketListener#processPacket(org.jivesoftware.smack.packet.Packet)
+	 */
 	@Override
 	public void processPacket(Packet _packet) {
 		// System.out.println(_packet.toXML());
-		printPacket(_packet);
-	}
-
-	public void printPacket(Packet _packet) {
 		if (!(_packet instanceof Message)) {
 			return;
 		}
 		Message msg = (Message) _packet;
 		if(msg.getBody()==null)
 			return;
+		
+		printMessage(msg);
+		forwardMessage(msg);
+	}
+
+	/**
+	 * Forward message to SIP
+	 *
+	 * @param msg the msg
+	 */
+	private void forwardMessage(Message msg) {
+		String to = m_relation_in.get(msg.getTo().split("@")[0]);
+		Server.handleXMPPMessage(msg.getFrom(),to,msg.getBody());
+	
+	}
+
+	/**
+	 * Prints the Message on the screen and on the standard output
+	 *
+	 * @param msg the Message which should be printed
+	 */
+	public void printMessage(Message msg) {
+		
 		String to = m_relation_in.get(msg.getTo().split("@")[0]);
 		if (to == null) {
 			m_logArea.append("No relation found for: " + msg.getTo()+"message: "+msg.getBody()+"\n");
@@ -184,12 +242,16 @@ public class XmppPanel extends JPanel implements ConnectionListener,
 				msg.getFrom(), msg.getTo(), to, msg.getBody());
 		System.out.println(p);
 		m_logArea.append(p);
-		m_logArea.notifyAll();
-
-		Server.handleXMPPMessage(msg.getFrom(),to,msg.getBody());
 
 	}
 
+	/**
+	 * Handle sip message and forwards it to the xmpp user
+	 *
+	 * @param from the sip user
+	 * @param to the xmpp user
+	 * @param msg the message
+	 */
 	public void handleSIPMessage(String from, String to, String msg) {
 		String fromUser =m_relation_out.get(from);
 		Connection conn = m_connections.get(fromUser);
@@ -203,26 +265,41 @@ public class XmppPanel extends JPanel implements ConnectionListener,
 		}
 	}
 
+	/* (non-Javadoc)
+	 * @see org.jivesoftware.smack.ConnectionListener#connectionClosed()
+	 */
 	@Override
 	public void connectionClosed() {
 		System.out.println("connection closed");
 	}
 
+	/* (non-Javadoc)
+	 * @see org.jivesoftware.smack.ConnectionListener#connectionClosedOnError(java.lang.Exception)
+	 */
 	@Override
 	public void connectionClosedOnError(Exception e) {
 		e.printStackTrace();
 	}
 
+	/* (non-Javadoc)
+	 * @see org.jivesoftware.smack.ConnectionListener#reconnectingIn(int)
+	 */
 	@Override
 	public void reconnectingIn(int arg0) {
 		System.out.println("reconnecting");
 	}
 
+	/* (non-Javadoc)
+	 * @see org.jivesoftware.smack.ConnectionListener#reconnectionFailed(java.lang.Exception)
+	 */
 	@Override
 	public void reconnectionFailed(Exception arg0) {
 		System.out.println("reconnection failed");
 	}
 
+	/* (non-Javadoc)
+	 * @see org.jivesoftware.smack.ConnectionListener#reconnectionSuccessful()
+	 */
 	@Override
 	public void reconnectionSuccessful() {
 		System.out.println("reconnection successful");
