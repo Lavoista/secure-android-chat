@@ -1,0 +1,456 @@
+\hypertarget{class_xmpp_panel}{\section{Xmpp\-Panel Class Reference}
+\label{class_xmpp_panel}\index{Xmpp\-Panel@{Xmpp\-Panel}}
+}
+Inheritance diagram for Xmpp\-Panel\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_xmpp_panel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_xmpp_panel_ac5b14d011dd4026fea53170e964bf813}{Xmpp\-Panel} ()
+\item 
+void \hyperlink{class_xmpp_panel_acada2a79f10e0b6e5f2cf6535104be30}{connect} ()
+\item 
+void \hyperlink{class_xmpp_panel_a02332fc3d9686cb9925d2bf8306056ac}{disconnect} ()
+\item 
+void \hyperlink{class_xmpp_panel_a9e1f0acb190d4dfee461e826a91c94e1}{process\-Packet} (Packet \-\_\-packet)
+\item 
+void \hyperlink{class_xmpp_panel_ac1997ba5748cb37e56f6fe6077526686}{print\-Message} (Message msg)
+\item 
+void \hyperlink{class_xmpp_panel_af8b1ba7401072826d2597d7d1f7dac55}{handle\-S\-I\-P\-Message} (String from, String to, String msg)
+\item 
+void \hyperlink{class_xmpp_panel_adec04fbc8bdf3b4491053f807355495c}{connection\-Closed} ()
+\item 
+void \hyperlink{class_xmpp_panel_a6b48430c1581bcbc5e4e0d64d5bf0cd9}{connection\-Closed\-On\-Error} (Exception e)
+\item 
+void \hyperlink{class_xmpp_panel_a40cc8a2244f1f4d66deaffd1d3c902b9}{reconnecting\-In} (int arg0)
+\item 
+void \hyperlink{class_xmpp_panel_a0b366ab50c94adb915e3861eac9328d8}{reconnection\-Failed} (Exception arg0)
+\item 
+void \hyperlink{class_xmpp_panel_a26e92a93633b405e79de1bedfc88f93e}{reconnection\-Successful} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_xmpp_panel_aeaee342f9fe7ca177a16e230d0355342}{forward\-Message} (Message msg)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Hash\-Map$<$ String, \hyperlink{class_w_t_f_connection}{W\-T\-F\-Connection} $>$ \hyperlink{class_xmpp_panel_ab4b5f0dc078924949ac4c0c4674420d1}{m\-\_\-connections} = new Hash\-Map$<$$>$()
+\item 
+Hash\-Map$<$ String, String $>$ \hyperlink{class_xmpp_panel_a30ad797e8a0720ddc85a70735ef79383}{m\-\_\-accounts} = new Hash\-Map$<$$>$()
+\item 
+Hash\-Map$<$ String, String $>$ \hyperlink{class_xmpp_panel_aa982fa1d5105a0ac752e14fae8321eb8}{m\-\_\-relation\-\_\-in} = new Hash\-Map$<$$>$()
+\item 
+Hash\-Map$<$ String, String $>$ \hyperlink{class_xmpp_panel_af8300e818e7ba4948c1a682c89860706}{m\-\_\-relation\-\_\-out} = new Hash\-Map$<$$>$()
+\item 
+J\-List \hyperlink{class_xmpp_panel_ab238edcd6185eb41b69800fc8d15ea9b}{m\-\_\-connection\-List}
+\item 
+J\-Text\-Area \hyperlink{class_xmpp_panel_ae531db25a81474f201775bfbf1ad5451}{m\-\_\-log\-Area}
+\item 
+J\-Scroll\-Pane \hyperlink{class_xmpp_panel_abbce5c6df3319cb78e4d960d8797e693}{scroll\-Pane\-\_\-2}
+\item 
+Default\-List\-Model$<$ \hyperlink{class_w_t_f_connection}{W\-T\-F\-Connection} $>$ \hyperlink{class_xmpp_panel_aa10db4c64a73d6034173cfff5aa7bd5d}{m\-\_\-list\-Model}
+\item 
+J\-Label \hyperlink{class_xmpp_panel_a19972c205e6a5280a1349685e1838b4c}{lbl\-Xmpp\-Connections}
+\item 
+J\-Label \hyperlink{class_xmpp_panel_a0086126eead014c8117e377a69311589}{label}
+\item 
+J\-Label \hyperlink{class_xmpp_panel_a380efe027c76a0a6a937d2c9ca73f804}{label\-\_\-1}
+\item 
+Connection\-Configuration \hyperlink{class_xmpp_panel_a65e1f37487a3e74772abe12930f820ad}{xmpp\-Config}
+\item 
+Connection\-Configuration \hyperlink{class_xmpp_panel_a04ece31d4df20d37f2cef0f8057b3ba8}{m\-\_\-config}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final long \hyperlink{class_xmpp_panel_afc08a42a1003eef8822e0cecf2eedaeb}{serial\-Version\-U\-I\-D} = 5657339239939443076\-L
+\item 
+static final int \hyperlink{class_xmpp_panel_a9910ab88b95a942edaed54e8ab43cd98}{D\-E\-L\-A\-Y} = 1000
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Class \hyperlink{class_xmpp_panel}{Xmpp\-Panel}. 
+
+Definition at line 29 of file Xmpp\-Panel.\-java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_xmpp_panel_ac5b14d011dd4026fea53170e964bf813}{\index{Xmpp\-Panel@{Xmpp\-Panel}!Xmpp\-Panel@{Xmpp\-Panel}}
+\index{Xmpp\-Panel@{Xmpp\-Panel}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{Xmpp\-Panel}]{\setlength{\rightskip}{0pt plus 5cm}Xmpp\-Panel.\-Xmpp\-Panel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_xmpp_panel_ac5b14d011dd4026fea53170e964bf813}
+Instantiates a new xmpp panel. 
+
+Definition at line 80 of file Xmpp\-Panel.\-java.
+
+
+
+References connect(), label, label\-\_\-1, lbl\-Xmpp\-Connections, m\-\_\-accounts, m\-\_\-config, m\-\_\-connection\-List, m\-\_\-list\-Model, m\-\_\-log\-Area, m\-\_\-relation\-\_\-in, m\-\_\-relation\-\_\-out, and scroll\-Pane\-\_\-2.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_xmpp_panel_acada2a79f10e0b6e5f2cf6535104be30}{\index{Xmpp\-Panel@{Xmpp\-Panel}!connect@{connect}}
+\index{connect@{connect}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{connect}]{\setlength{\rightskip}{0pt plus 5cm}void Xmpp\-Panel.\-connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_xmpp_panel_acada2a79f10e0b6e5f2cf6535104be30}
+Connect all the gateway clients 
+
+Definition at line 140 of file Xmpp\-Panel.\-java.
+
+
+
+References D\-E\-L\-A\-Y, m\-\_\-accounts, m\-\_\-config, m\-\_\-connections, and m\-\_\-list\-Model.
+
+
+
+Referenced by Xmpp\-Panel().
+
+\hypertarget{class_xmpp_panel_adec04fbc8bdf3b4491053f807355495c}{\index{Xmpp\-Panel@{Xmpp\-Panel}!connection\-Closed@{connection\-Closed}}
+\index{connection\-Closed@{connection\-Closed}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{connection\-Closed}]{\setlength{\rightskip}{0pt plus 5cm}void Xmpp\-Panel.\-connection\-Closed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_xmpp_panel_adec04fbc8bdf3b4491053f807355495c}
+
+
+Definition at line 283 of file Xmpp\-Panel.\-java.
+
+\hypertarget{class_xmpp_panel_a6b48430c1581bcbc5e4e0d64d5bf0cd9}{\index{Xmpp\-Panel@{Xmpp\-Panel}!connection\-Closed\-On\-Error@{connection\-Closed\-On\-Error}}
+\index{connection\-Closed\-On\-Error@{connection\-Closed\-On\-Error}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{connection\-Closed\-On\-Error}]{\setlength{\rightskip}{0pt plus 5cm}void Xmpp\-Panel.\-connection\-Closed\-On\-Error (
+\begin{DoxyParamCaption}
+\item[{Exception}]{e}
+\end{DoxyParamCaption}
+)}}\label{class_xmpp_panel_a6b48430c1581bcbc5e4e0d64d5bf0cd9}
+
+
+Definition at line 291 of file Xmpp\-Panel.\-java.
+
+\hypertarget{class_xmpp_panel_a02332fc3d9686cb9925d2bf8306056ac}{\index{Xmpp\-Panel@{Xmpp\-Panel}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{disconnect}]{\setlength{\rightskip}{0pt plus 5cm}void Xmpp\-Panel.\-disconnect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_xmpp_panel_a02332fc3d9686cb9925d2bf8306056ac}
+Disconnect the gateway clients 
+
+Definition at line 190 of file Xmpp\-Panel.\-java.
+
+
+
+References m\-\_\-connections.
+
+
+
+Referenced by Xmpp\-Gateway.\-window\-Closing().
+
+\hypertarget{class_xmpp_panel_aeaee342f9fe7ca177a16e230d0355342}{\index{Xmpp\-Panel@{Xmpp\-Panel}!forward\-Message@{forward\-Message}}
+\index{forward\-Message@{forward\-Message}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{forward\-Message}]{\setlength{\rightskip}{0pt plus 5cm}void Xmpp\-Panel.\-forward\-Message (
+\begin{DoxyParamCaption}
+\item[{Message}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_xmpp_panel_aeaee342f9fe7ca177a16e230d0355342}
+Forward message to S\-I\-P
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & the msg \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 223 of file Xmpp\-Panel.\-java.
+
+
+
+References Server.\-handle\-X\-M\-P\-P\-Message(), and m\-\_\-relation\-\_\-in.
+
+
+
+Referenced by process\-Packet().
+
+\hypertarget{class_xmpp_panel_af8b1ba7401072826d2597d7d1f7dac55}{\index{Xmpp\-Panel@{Xmpp\-Panel}!handle\-S\-I\-P\-Message@{handle\-S\-I\-P\-Message}}
+\index{handle\-S\-I\-P\-Message@{handle\-S\-I\-P\-Message}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{handle\-S\-I\-P\-Message}]{\setlength{\rightskip}{0pt plus 5cm}void Xmpp\-Panel.\-handle\-S\-I\-P\-Message (
+\begin{DoxyParamCaption}
+\item[{String}]{from, }
+\item[{String}]{to, }
+\item[{String}]{msg}
+\end{DoxyParamCaption}
+)}}\label{class_xmpp_panel_af8b1ba7401072826d2597d7d1f7dac55}
+Handle sip message and forwards it to the xmpp user
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & the sip user \\
+\hline
+{\em to} & the xmpp user \\
+\hline
+{\em msg} & the message \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 255 of file Xmpp\-Panel.\-java.
+
+
+
+References m\-\_\-connections, m\-\_\-log\-Area, and m\-\_\-relation\-\_\-out.
+
+\hypertarget{class_xmpp_panel_ac1997ba5748cb37e56f6fe6077526686}{\index{Xmpp\-Panel@{Xmpp\-Panel}!print\-Message@{print\-Message}}
+\index{print\-Message@{print\-Message}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{print\-Message}]{\setlength{\rightskip}{0pt plus 5cm}void Xmpp\-Panel.\-print\-Message (
+\begin{DoxyParamCaption}
+\item[{Message}]{msg}
+\end{DoxyParamCaption}
+)}}\label{class_xmpp_panel_ac1997ba5748cb37e56f6fe6077526686}
+Prints the Message on the screen and on the standard output
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & the Message which should be printed \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 234 of file Xmpp\-Panel.\-java.
+
+
+
+References m\-\_\-log\-Area, and m\-\_\-relation\-\_\-in.
+
+
+
+Referenced by process\-Packet().
+
+\hypertarget{class_xmpp_panel_a9e1f0acb190d4dfee461e826a91c94e1}{\index{Xmpp\-Panel@{Xmpp\-Panel}!process\-Packet@{process\-Packet}}
+\index{process\-Packet@{process\-Packet}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{process\-Packet}]{\setlength{\rightskip}{0pt plus 5cm}void Xmpp\-Panel.\-process\-Packet (
+\begin{DoxyParamCaption}
+\item[{Packet}]{\-\_\-packet}
+\end{DoxyParamCaption}
+)}}\label{class_xmpp_panel_a9e1f0acb190d4dfee461e826a91c94e1}
+
+
+Definition at line 205 of file Xmpp\-Panel.\-java.
+
+
+
+References forward\-Message(), and print\-Message().
+
+\hypertarget{class_xmpp_panel_a40cc8a2244f1f4d66deaffd1d3c902b9}{\index{Xmpp\-Panel@{Xmpp\-Panel}!reconnecting\-In@{reconnecting\-In}}
+\index{reconnecting\-In@{reconnecting\-In}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{reconnecting\-In}]{\setlength{\rightskip}{0pt plus 5cm}void Xmpp\-Panel.\-reconnecting\-In (
+\begin{DoxyParamCaption}
+\item[{int}]{arg0}
+\end{DoxyParamCaption}
+)}}\label{class_xmpp_panel_a40cc8a2244f1f4d66deaffd1d3c902b9}
+
+
+Definition at line 299 of file Xmpp\-Panel.\-java.
+
+\hypertarget{class_xmpp_panel_a0b366ab50c94adb915e3861eac9328d8}{\index{Xmpp\-Panel@{Xmpp\-Panel}!reconnection\-Failed@{reconnection\-Failed}}
+\index{reconnection\-Failed@{reconnection\-Failed}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{reconnection\-Failed}]{\setlength{\rightskip}{0pt plus 5cm}void Xmpp\-Panel.\-reconnection\-Failed (
+\begin{DoxyParamCaption}
+\item[{Exception}]{arg0}
+\end{DoxyParamCaption}
+)}}\label{class_xmpp_panel_a0b366ab50c94adb915e3861eac9328d8}
+
+
+Definition at line 307 of file Xmpp\-Panel.\-java.
+
+\hypertarget{class_xmpp_panel_a26e92a93633b405e79de1bedfc88f93e}{\index{Xmpp\-Panel@{Xmpp\-Panel}!reconnection\-Successful@{reconnection\-Successful}}
+\index{reconnection\-Successful@{reconnection\-Successful}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{reconnection\-Successful}]{\setlength{\rightskip}{0pt plus 5cm}void Xmpp\-Panel.\-reconnection\-Successful (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_xmpp_panel_a26e92a93633b405e79de1bedfc88f93e}
+
+
+Definition at line 315 of file Xmpp\-Panel.\-java.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_xmpp_panel_a9910ab88b95a942edaed54e8ab43cd98}{\index{Xmpp\-Panel@{Xmpp\-Panel}!D\-E\-L\-A\-Y@{D\-E\-L\-A\-Y}}
+\index{D\-E\-L\-A\-Y@{D\-E\-L\-A\-Y}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{D\-E\-L\-A\-Y}]{\setlength{\rightskip}{0pt plus 5cm}final int Xmpp\-Panel.\-D\-E\-L\-A\-Y = 1000\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_xmpp_panel_a9910ab88b95a942edaed54e8ab43cd98}
+The Constant D\-E\-L\-A\-Y. 
+
+Definition at line 75 of file Xmpp\-Panel.\-java.
+
+
+
+Referenced by connect().
+
+\hypertarget{class_xmpp_panel_a0086126eead014c8117e377a69311589}{\index{Xmpp\-Panel@{Xmpp\-Panel}!label@{label}}
+\index{label@{label}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{label}]{\setlength{\rightskip}{0pt plus 5cm}J\-Label Xmpp\-Panel.\-label\hspace{0.3cm}{\ttfamily [private]}}}\label{class_xmpp_panel_a0086126eead014c8117e377a69311589}
+The label. 
+
+Definition at line 63 of file Xmpp\-Panel.\-java.
+
+
+
+Referenced by Xmpp\-Panel().
+
+\hypertarget{class_xmpp_panel_a380efe027c76a0a6a937d2c9ca73f804}{\index{Xmpp\-Panel@{Xmpp\-Panel}!label\-\_\-1@{label\-\_\-1}}
+\index{label\-\_\-1@{label\-\_\-1}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{label\-\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}J\-Label Xmpp\-Panel.\-label\-\_\-1\hspace{0.3cm}{\ttfamily [private]}}}\label{class_xmpp_panel_a380efe027c76a0a6a937d2c9ca73f804}
+The label\-\_\-1. 
+
+Definition at line 66 of file Xmpp\-Panel.\-java.
+
+
+
+Referenced by Xmpp\-Panel().
+
+\hypertarget{class_xmpp_panel_a19972c205e6a5280a1349685e1838b4c}{\index{Xmpp\-Panel@{Xmpp\-Panel}!lbl\-Xmpp\-Connections@{lbl\-Xmpp\-Connections}}
+\index{lbl\-Xmpp\-Connections@{lbl\-Xmpp\-Connections}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{lbl\-Xmpp\-Connections}]{\setlength{\rightskip}{0pt plus 5cm}J\-Label Xmpp\-Panel.\-lbl\-Xmpp\-Connections\hspace{0.3cm}{\ttfamily [private]}}}\label{class_xmpp_panel_a19972c205e6a5280a1349685e1838b4c}
+The lbl xmpp connections. 
+
+Definition at line 60 of file Xmpp\-Panel.\-java.
+
+
+
+Referenced by Xmpp\-Panel().
+
+\hypertarget{class_xmpp_panel_a30ad797e8a0720ddc85a70735ef79383}{\index{Xmpp\-Panel@{Xmpp\-Panel}!m\-\_\-accounts@{m\-\_\-accounts}}
+\index{m\-\_\-accounts@{m\-\_\-accounts}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{m\-\_\-accounts}]{\setlength{\rightskip}{0pt plus 5cm}Hash\-Map$<$String, String$>$ Xmpp\-Panel.\-m\-\_\-accounts = new Hash\-Map$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}}\label{class_xmpp_panel_a30ad797e8a0720ddc85a70735ef79383}
+The m\-\_\-accounts. 
+
+Definition at line 39 of file Xmpp\-Panel.\-java.
+
+
+
+Referenced by connect(), and Xmpp\-Panel().
+
+\hypertarget{class_xmpp_panel_a04ece31d4df20d37f2cef0f8057b3ba8}{\index{Xmpp\-Panel@{Xmpp\-Panel}!m\-\_\-config@{m\-\_\-config}}
+\index{m\-\_\-config@{m\-\_\-config}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{m\-\_\-config}]{\setlength{\rightskip}{0pt plus 5cm}Connection\-Configuration Xmpp\-Panel.\-m\-\_\-config\hspace{0.3cm}{\ttfamily [private]}}}\label{class_xmpp_panel_a04ece31d4df20d37f2cef0f8057b3ba8}
+The m\-\_\-config. 
+
+Definition at line 72 of file Xmpp\-Panel.\-java.
+
+
+
+Referenced by connect(), and Xmpp\-Panel().
+
+\hypertarget{class_xmpp_panel_ab238edcd6185eb41b69800fc8d15ea9b}{\index{Xmpp\-Panel@{Xmpp\-Panel}!m\-\_\-connection\-List@{m\-\_\-connection\-List}}
+\index{m\-\_\-connection\-List@{m\-\_\-connection\-List}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{m\-\_\-connection\-List}]{\setlength{\rightskip}{0pt plus 5cm}J\-List Xmpp\-Panel.\-m\-\_\-connection\-List\hspace{0.3cm}{\ttfamily [private]}}}\label{class_xmpp_panel_ab238edcd6185eb41b69800fc8d15ea9b}
+The m\-\_\-connection list. 
+
+Definition at line 48 of file Xmpp\-Panel.\-java.
+
+
+
+Referenced by Xmpp\-Panel().
+
+\hypertarget{class_xmpp_panel_ab4b5f0dc078924949ac4c0c4674420d1}{\index{Xmpp\-Panel@{Xmpp\-Panel}!m\-\_\-connections@{m\-\_\-connections}}
+\index{m\-\_\-connections@{m\-\_\-connections}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{m\-\_\-connections}]{\setlength{\rightskip}{0pt plus 5cm}Hash\-Map$<$String, {\bf W\-T\-F\-Connection}$>$ Xmpp\-Panel.\-m\-\_\-connections = new Hash\-Map$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}}\label{class_xmpp_panel_ab4b5f0dc078924949ac4c0c4674420d1}
+The m\-\_\-connections. 
+
+Definition at line 36 of file Xmpp\-Panel.\-java.
+
+
+
+Referenced by connect(), disconnect(), and handle\-S\-I\-P\-Message().
+
+\hypertarget{class_xmpp_panel_aa10db4c64a73d6034173cfff5aa7bd5d}{\index{Xmpp\-Panel@{Xmpp\-Panel}!m\-\_\-list\-Model@{m\-\_\-list\-Model}}
+\index{m\-\_\-list\-Model@{m\-\_\-list\-Model}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{m\-\_\-list\-Model}]{\setlength{\rightskip}{0pt plus 5cm}Default\-List\-Model$<${\bf W\-T\-F\-Connection}$>$ Xmpp\-Panel.\-m\-\_\-list\-Model\hspace{0.3cm}{\ttfamily [private]}}}\label{class_xmpp_panel_aa10db4c64a73d6034173cfff5aa7bd5d}
+The m\-\_\-list model. 
+
+Definition at line 57 of file Xmpp\-Panel.\-java.
+
+
+
+Referenced by connect(), and Xmpp\-Panel().
+
+\hypertarget{class_xmpp_panel_ae531db25a81474f201775bfbf1ad5451}{\index{Xmpp\-Panel@{Xmpp\-Panel}!m\-\_\-log\-Area@{m\-\_\-log\-Area}}
+\index{m\-\_\-log\-Area@{m\-\_\-log\-Area}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{m\-\_\-log\-Area}]{\setlength{\rightskip}{0pt plus 5cm}J\-Text\-Area Xmpp\-Panel.\-m\-\_\-log\-Area\hspace{0.3cm}{\ttfamily [private]}}}\label{class_xmpp_panel_ae531db25a81474f201775bfbf1ad5451}
+The m\-\_\-log area. 
+
+Definition at line 51 of file Xmpp\-Panel.\-java.
+
+
+
+Referenced by handle\-S\-I\-P\-Message(), print\-Message(), and Xmpp\-Panel().
+
+\hypertarget{class_xmpp_panel_aa982fa1d5105a0ac752e14fae8321eb8}{\index{Xmpp\-Panel@{Xmpp\-Panel}!m\-\_\-relation\-\_\-in@{m\-\_\-relation\-\_\-in}}
+\index{m\-\_\-relation\-\_\-in@{m\-\_\-relation\-\_\-in}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{m\-\_\-relation\-\_\-in}]{\setlength{\rightskip}{0pt plus 5cm}Hash\-Map$<$String, String$>$ Xmpp\-Panel.\-m\-\_\-relation\-\_\-in = new Hash\-Map$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}}\label{class_xmpp_panel_aa982fa1d5105a0ac752e14fae8321eb8}
+The m\-\_\-relation\-\_\-in. 
+
+Definition at line 42 of file Xmpp\-Panel.\-java.
+
+
+
+Referenced by forward\-Message(), print\-Message(), and Xmpp\-Panel().
+
+\hypertarget{class_xmpp_panel_af8300e818e7ba4948c1a682c89860706}{\index{Xmpp\-Panel@{Xmpp\-Panel}!m\-\_\-relation\-\_\-out@{m\-\_\-relation\-\_\-out}}
+\index{m\-\_\-relation\-\_\-out@{m\-\_\-relation\-\_\-out}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{m\-\_\-relation\-\_\-out}]{\setlength{\rightskip}{0pt plus 5cm}Hash\-Map$<$String, String$>$ Xmpp\-Panel.\-m\-\_\-relation\-\_\-out = new Hash\-Map$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}}\label{class_xmpp_panel_af8300e818e7ba4948c1a682c89860706}
+The m\-\_\-relation\-\_\-out. 
+
+Definition at line 45 of file Xmpp\-Panel.\-java.
+
+
+
+Referenced by handle\-S\-I\-P\-Message(), and Xmpp\-Panel().
+
+\hypertarget{class_xmpp_panel_abbce5c6df3319cb78e4d960d8797e693}{\index{Xmpp\-Panel@{Xmpp\-Panel}!scroll\-Pane\-\_\-2@{scroll\-Pane\-\_\-2}}
+\index{scroll\-Pane\-\_\-2@{scroll\-Pane\-\_\-2}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{scroll\-Pane\-\_\-2}]{\setlength{\rightskip}{0pt plus 5cm}J\-Scroll\-Pane Xmpp\-Panel.\-scroll\-Pane\-\_\-2\hspace{0.3cm}{\ttfamily [private]}}}\label{class_xmpp_panel_abbce5c6df3319cb78e4d960d8797e693}
+The scroll pane\-\_\-2. 
+
+Definition at line 54 of file Xmpp\-Panel.\-java.
+
+
+
+Referenced by Xmpp\-Panel().
+
+\hypertarget{class_xmpp_panel_afc08a42a1003eef8822e0cecf2eedaeb}{\index{Xmpp\-Panel@{Xmpp\-Panel}!serial\-Version\-U\-I\-D@{serial\-Version\-U\-I\-D}}
+\index{serial\-Version\-U\-I\-D@{serial\-Version\-U\-I\-D}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{serial\-Version\-U\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}final long Xmpp\-Panel.\-serial\-Version\-U\-I\-D = 5657339239939443076\-L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_xmpp_panel_afc08a42a1003eef8822e0cecf2eedaeb}
+The Constant serial\-Version\-U\-I\-D. 
+
+Definition at line 33 of file Xmpp\-Panel.\-java.
+
+\hypertarget{class_xmpp_panel_a65e1f37487a3e74772abe12930f820ad}{\index{Xmpp\-Panel@{Xmpp\-Panel}!xmpp\-Config@{xmpp\-Config}}
+\index{xmpp\-Config@{xmpp\-Config}!XmppPanel@{Xmpp\-Panel}}
+\subsubsection[{xmpp\-Config}]{\setlength{\rightskip}{0pt plus 5cm}Connection\-Configuration Xmpp\-Panel.\-xmpp\-Config\hspace{0.3cm}{\ttfamily [private]}}}\label{class_xmpp_panel_a65e1f37487a3e74772abe12930f820ad}
+The xmpp config. 
+
+Definition at line 69 of file Xmpp\-Panel.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_xmpp_panel_8java}{Xmpp\-Panel.\-java}\end{DoxyCompactItemize}

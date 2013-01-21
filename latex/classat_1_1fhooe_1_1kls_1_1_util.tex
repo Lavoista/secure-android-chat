@@ -1,0 +1,253 @@
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_util}{\section{at.\-fhooe.\-kls.\-Util Class Reference}
+\label{classat_1_1fhooe_1_1kls_1_1_util}\index{at.\-fhooe.\-kls.\-Util@{at.\-fhooe.\-kls.\-Util}}
+}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \hyperlink{classat_1_1fhooe_1_1kls_1_1_util_aa35b93eb337f44bde0a617f23fc87fe7}{to\-Hex} (byte\mbox{[}$\,$\mbox{]} buf)
+\item 
+static byte\mbox{[}$\,$\mbox{]} \hyperlink{classat_1_1fhooe_1_1kls_1_1_util_a690f3128e5679a55c80fe44940f51eb1}{get\-Raw\-Key} (byte\mbox{[}$\,$\mbox{]} seed)  throws Exception 
+\item 
+static void \hyperlink{classat_1_1fhooe_1_1kls_1_1_util_a39b50bf23b8d591cf8688565a0135b3b}{show\-Toast} (Context context, String message)
+\item 
+static byte\mbox{[}$\,$\mbox{]} \hyperlink{classat_1_1fhooe_1_1kls_1_1_util_a62622e2d33b0ab3ba497073a4e40c570}{encrypt} (byte\mbox{[}$\,$\mbox{]} raw, byte\mbox{[}$\,$\mbox{]} clear)  throws Exception 
+\item 
+static byte\mbox{[}$\,$\mbox{]} \hyperlink{classat_1_1fhooe_1_1kls_1_1_util_adf59bcfb0c962d12f71f7b5b4b64824d}{decrypt} (byte\mbox{[}$\,$\mbox{]} raw, byte\mbox{[}$\,$\mbox{]} encrypted)  throws Exception 
+\item 
+static byte\mbox{[}$\,$\mbox{]} \hyperlink{classat_1_1fhooe_1_1kls_1_1_util_ac457dbbbe9456c996ddbf15ea3a46141}{to\-Byte} (String hex\-String)
+\item 
+static byte\mbox{[}$\,$\mbox{]} \hyperlink{classat_1_1fhooe_1_1kls_1_1_util_ab6a9acc617b60d37df922624d59e3b53}{generate\-Seed} ()
+\item 
+static String \hyperlink{classat_1_1fhooe_1_1kls_1_1_util_a30995c53e5d796cf9af2074a774114f6}{get\-Key} ()  throws Exception
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Class \hyperlink{classat_1_1fhooe_1_1kls_1_1_util}{Util}. 
+
+Definition at line 21 of file Util.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_util_adf59bcfb0c962d12f71f7b5b4b64824d}{\index{at\-::fhooe\-::kls\-::\-Util@{at\-::fhooe\-::kls\-::\-Util}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!at::fhooe::kls::Util@{at\-::fhooe\-::kls\-::\-Util}}
+\subsubsection[{decrypt}]{\setlength{\rightskip}{0pt plus 5cm}static byte \mbox{[}$\,$\mbox{]} at.\-fhooe.\-kls.\-Util.\-decrypt (
+\begin{DoxyParamCaption}
+\item[{byte\mbox{[}$\,$\mbox{]}}]{raw, }
+\item[{byte\mbox{[}$\,$\mbox{]}}]{encrypted}
+\end{DoxyParamCaption}
+)  throws Exception \hspace{0.3cm}{\ttfamily [static]}}}\label{classat_1_1fhooe_1_1kls_1_1_util_adf59bcfb0c962d12f71f7b5b4b64824d}
+Decrypt.
+
+
+\begin{DoxyParams}{Parameters}
+{\em raw} & the raw \\
+\hline
+{\em encrypted} & the encrypted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the byte\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & the exception \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 108 of file Util.\-java.
+
+
+
+Referenced by at.\-fhooe.\-kls.\-S\-M\-S\-Adapter.\-get\-Key().
+
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_util_a62622e2d33b0ab3ba497073a4e40c570}{\index{at\-::fhooe\-::kls\-::\-Util@{at\-::fhooe\-::kls\-::\-Util}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!at::fhooe::kls::Util@{at\-::fhooe\-::kls\-::\-Util}}
+\subsubsection[{encrypt}]{\setlength{\rightskip}{0pt plus 5cm}static byte \mbox{[}$\,$\mbox{]} at.\-fhooe.\-kls.\-Util.\-encrypt (
+\begin{DoxyParamCaption}
+\item[{byte\mbox{[}$\,$\mbox{]}}]{raw, }
+\item[{byte\mbox{[}$\,$\mbox{]}}]{clear}
+\end{DoxyParamCaption}
+)  throws Exception \hspace{0.3cm}{\ttfamily [static]}}}\label{classat_1_1fhooe_1_1kls_1_1_util_a62622e2d33b0ab3ba497073a4e40c570}
+Encrypt.
+
+
+\begin{DoxyParams}{Parameters}
+{\em raw} & the raw \\
+\hline
+{\em clear} & the clear \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the byte\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & the exception \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 92 of file Util.\-java.
+
+
+
+Referenced by at.\-fhooe.\-kls.\-S\-M\-S\-Adapter.\-create\-Note().
+
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_util_ab6a9acc617b60d37df922624d59e3b53}{\index{at\-::fhooe\-::kls\-::\-Util@{at\-::fhooe\-::kls\-::\-Util}!generate\-Seed@{generate\-Seed}}
+\index{generate\-Seed@{generate\-Seed}!at::fhooe::kls::Util@{at\-::fhooe\-::kls\-::\-Util}}
+\subsubsection[{generate\-Seed}]{\setlength{\rightskip}{0pt plus 5cm}static byte \mbox{[}$\,$\mbox{]} at.\-fhooe.\-kls.\-Util.\-generate\-Seed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classat_1_1fhooe_1_1kls_1_1_util_ab6a9acc617b60d37df922624d59e3b53}
+Generate seed.
+
+\begin{DoxyReturn}{Returns}
+the byte\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Definition at line 135 of file Util.\-java.
+
+
+
+Referenced by at.\-fhooe.\-kls.\-Util.\-get\-Key().
+
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_util_a30995c53e5d796cf9af2074a774114f6}{\index{at\-::fhooe\-::kls\-::\-Util@{at\-::fhooe\-::kls\-::\-Util}!get\-Key@{get\-Key}}
+\index{get\-Key@{get\-Key}!at::fhooe::kls::Util@{at\-::fhooe\-::kls\-::\-Util}}
+\subsubsection[{get\-Key}]{\setlength{\rightskip}{0pt plus 5cm}static String at.\-fhooe.\-kls.\-Util.\-get\-Key (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throws Exception\hspace{0.3cm}{\ttfamily [static]}}}\label{classat_1_1fhooe_1_1kls_1_1_util_a30995c53e5d796cf9af2074a774114f6}
+Gets the key.
+
+\begin{DoxyReturn}{Returns}
+the key 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & the exception \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 170 of file Util.\-java.
+
+
+
+References at.\-fhooe.\-kls.\-Util.\-generate\-Seed(), at.\-fhooe.\-kls.\-Util.\-get\-Raw\-Key(), and at.\-fhooe.\-kls.\-Util.\-to\-Hex().
+
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_util_a690f3128e5679a55c80fe44940f51eb1}{\index{at\-::fhooe\-::kls\-::\-Util@{at\-::fhooe\-::kls\-::\-Util}!get\-Raw\-Key@{get\-Raw\-Key}}
+\index{get\-Raw\-Key@{get\-Raw\-Key}!at::fhooe::kls::Util@{at\-::fhooe\-::kls\-::\-Util}}
+\subsubsection[{get\-Raw\-Key}]{\setlength{\rightskip}{0pt plus 5cm}static byte \mbox{[}$\,$\mbox{]} at.\-fhooe.\-kls.\-Util.\-get\-Raw\-Key (
+\begin{DoxyParamCaption}
+\item[{byte\mbox{[}$\,$\mbox{]}}]{seed}
+\end{DoxyParamCaption}
+)  throws Exception \hspace{0.3cm}{\ttfamily [static]}}}\label{classat_1_1fhooe_1_1kls_1_1_util_a690f3128e5679a55c80fe44940f51eb1}
+Gets the raw key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em seed} & the seed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the raw key 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & the exception \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 62 of file Util.\-java.
+
+
+
+Referenced by at.\-fhooe.\-kls.\-Util.\-get\-Key().
+
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_util_a39b50bf23b8d591cf8688565a0135b3b}{\index{at\-::fhooe\-::kls\-::\-Util@{at\-::fhooe\-::kls\-::\-Util}!show\-Toast@{show\-Toast}}
+\index{show\-Toast@{show\-Toast}!at::fhooe::kls::Util@{at\-::fhooe\-::kls\-::\-Util}}
+\subsubsection[{show\-Toast}]{\setlength{\rightskip}{0pt plus 5cm}static void at.\-fhooe.\-kls.\-Util.\-show\-Toast (
+\begin{DoxyParamCaption}
+\item[{Context}]{context, }
+\item[{String}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classat_1_1fhooe_1_1kls_1_1_util_a39b50bf23b8d591cf8688565a0135b3b}
+Show toast.
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & the context \\
+\hline
+{\em message} & the message \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 78 of file Util.\-java.
+
+
+
+Referenced by at.\-fhooe.\-kls.\-Secure\-S\-M\-S\-Activity.\-on\-Create().
+
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_util_ac457dbbbe9456c996ddbf15ea3a46141}{\index{at\-::fhooe\-::kls\-::\-Util@{at\-::fhooe\-::kls\-::\-Util}!to\-Byte@{to\-Byte}}
+\index{to\-Byte@{to\-Byte}!at::fhooe::kls::Util@{at\-::fhooe\-::kls\-::\-Util}}
+\subsubsection[{to\-Byte}]{\setlength{\rightskip}{0pt plus 5cm}static byte \mbox{[}$\,$\mbox{]} at.\-fhooe.\-kls.\-Util.\-to\-Byte (
+\begin{DoxyParamCaption}
+\item[{String}]{hex\-String}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classat_1_1fhooe_1_1kls_1_1_util_ac457dbbbe9456c996ddbf15ea3a46141}
+To byte.
+
+
+\begin{DoxyParams}{Parameters}
+{\em hex\-String} & the hex string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the byte\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Definition at line 122 of file Util.\-java.
+
+
+
+Referenced by at.\-fhooe.\-kls.\-S\-M\-S\-Adapter.\-get\-Key().
+
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_util_aa35b93eb337f44bde0a617f23fc87fe7}{\index{at\-::fhooe\-::kls\-::\-Util@{at\-::fhooe\-::kls\-::\-Util}!to\-Hex@{to\-Hex}}
+\index{to\-Hex@{to\-Hex}!at::fhooe::kls::Util@{at\-::fhooe\-::kls\-::\-Util}}
+\subsubsection[{to\-Hex}]{\setlength{\rightskip}{0pt plus 5cm}static String at.\-fhooe.\-kls.\-Util.\-to\-Hex (
+\begin{DoxyParamCaption}
+\item[{byte\mbox{[}$\,$\mbox{]}}]{buf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classat_1_1fhooe_1_1kls_1_1_util_aa35b93eb337f44bde0a617f23fc87fe7}
+To hex.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & the buf \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the string 
+\end{DoxyReturn}
+
+
+Definition at line 32 of file Util.\-java.
+
+
+
+Referenced by at.\-fhooe.\-kls.\-S\-M\-S\-Adapter.\-create\-Note(), at.\-fhooe.\-kls.\-Util.\-get\-Key(), and at.\-fhooe.\-kls.\-S\-M\-S\-Adapter.\-open().
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/at/fhooe/kls/Util.\-java\end{DoxyCompactItemize}

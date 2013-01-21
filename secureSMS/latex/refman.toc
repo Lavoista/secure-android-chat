@@ -1,0 +1,131 @@
+\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}Class Documentation}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}Chat Class Reference}{5}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Detailed Description}{5}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Member Function Documentation}{5}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}on\discretionary {-}{}{}Create}{5}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.2}set\discretionary {-}{}{}Contact}{6}{subsubsection.3.1.2.2}
+\contentsline {section}{\numberline {3.2}at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}Chat\discretionary {-}{}{}List\discretionary {-}{}{}Adapter Class Reference}{6}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Detailed Description}{6}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Constructor \& Destructor Documentation}{6}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Chat\discretionary {-}{}{}List\discretionary {-}{}{}Adapter}{6}{subsubsection.3.2.2.1}
+\contentsline {section}{\numberline {3.3}at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}Chat\discretionary {-}{}{}Message Class Reference}{7}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Detailed Description}{7}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Constructor \& Destructor Documentation}{7}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Chat\discretionary {-}{}{}Message}{7}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.3.2.2}Chat\discretionary {-}{}{}Message}{8}{subsubsection.3.3.2.2}
+\contentsline {subsubsection}{\numberline {3.3.2.3}Chat\discretionary {-}{}{}Message}{8}{subsubsection.3.3.2.3}
+\contentsline {subsection}{\numberline {3.3.3}Member Function Documentation}{8}{subsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3.1}get\discretionary {-}{}{}Message}{8}{subsubsection.3.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.3.2}get\discretionary {-}{}{}Sender}{8}{subsubsection.3.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3.3}get\discretionary {-}{}{}Time}{8}{subsubsection.3.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3.4}is\discretionary {-}{}{}Mine}{9}{subsubsection.3.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.3.5}set\discretionary {-}{}{}Message}{9}{subsubsection.3.3.3.5}
+\contentsline {subsubsection}{\numberline {3.3.3.6}set\discretionary {-}{}{}Sender}{9}{subsubsection.3.3.3.6}
+\contentsline {subsubsection}{\numberline {3.3.3.7}set\discretionary {-}{}{}Time}{9}{subsubsection.3.3.3.7}
+\contentsline {subsubsection}{\numberline {3.3.3.8}short\discretionary {-}{}{}Time}{9}{subsubsection.3.3.3.8}
+\contentsline {subsection}{\numberline {3.3.4}Member Data Documentation}{9}{subsection.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.4.1}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}R}{9}{subsubsection.3.3.4.1}
+\contentsline {section}{\numberline {3.4}at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}Contact\discretionary {-}{}{}Item Class Reference}{10}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Detailed Description}{10}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Constructor \& Destructor Documentation}{11}{subsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.2.1}Contact\discretionary {-}{}{}Item}{11}{subsubsection.3.4.2.1}
+\contentsline {subsection}{\numberline {3.4.3}Member Function Documentation}{11}{subsection.3.4.3}
+\contentsline {subsubsection}{\numberline {3.4.3.1}get\discretionary {-}{}{}Key}{11}{subsubsection.3.4.3.1}
+\contentsline {subsubsection}{\numberline {3.4.3.2}get\discretionary {-}{}{}Status}{11}{subsubsection.3.4.3.2}
+\contentsline {subsubsection}{\numberline {3.4.3.3}get\discretionary {-}{}{}User}{11}{subsubsection.3.4.3.3}
+\contentsline {subsubsection}{\numberline {3.4.3.4}is\discretionary {-}{}{}Available}{11}{subsubsection.3.4.3.4}
+\contentsline {subsubsection}{\numberline {3.4.3.5}set\discretionary {-}{}{}Available}{12}{subsubsection.3.4.3.5}
+\contentsline {subsubsection}{\numberline {3.4.3.6}set\discretionary {-}{}{}Key}{12}{subsubsection.3.4.3.6}
+\contentsline {subsubsection}{\numberline {3.4.3.7}set\discretionary {-}{}{}Status}{12}{subsubsection.3.4.3.7}
+\contentsline {subsubsection}{\numberline {3.4.3.8}set\discretionary {-}{}{}User}{12}{subsubsection.3.4.3.8}
+\contentsline {subsection}{\numberline {3.4.4}Member Data Documentation}{12}{subsection.3.4.4}
+\contentsline {subsubsection}{\numberline {3.4.4.1}C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}R}{12}{subsubsection.3.4.4.1}
+\contentsline {section}{\numberline {3.5}at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}Contact\discretionary {-}{}{}List\discretionary {-}{}{}Adapter Class Reference}{13}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Detailed Description}{13}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Constructor \& Destructor Documentation}{13}{subsection.3.5.2}
+\contentsline {subsubsection}{\numberline {3.5.2.1}Contact\discretionary {-}{}{}List\discretionary {-}{}{}Adapter}{13}{subsubsection.3.5.2.1}
+\contentsline {section}{\numberline {3.6}at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}Hash Class Reference}{13}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Detailed Description}{14}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Member Function Documentation}{14}{subsection.3.6.2}
+\contentsline {subsubsection}{\numberline {3.6.2.1}S\discretionary {-}{}{}H\discretionary {-}{}{}A256}{14}{subsubsection.3.6.2.1}
+\contentsline {subsection}{\numberline {3.6.3}Member Data Documentation}{14}{subsection.3.6.3}
+\contentsline {subsubsection}{\numberline {3.6.3.1}D\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}A\discretionary {-}{}{}L\discretionary {-}{}{}G\discretionary {-}{}{}O\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}H\discretionary {-}{}{}M}{14}{subsubsection.3.6.3.1}
+\contentsline {section}{\numberline {3.7}at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}I\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter Interface Reference}{14}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Detailed Description}{15}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Member Function Documentation}{15}{subsection.3.7.2}
+\contentsline {subsubsection}{\numberline {3.7.2.1}close}{15}{subsubsection.3.7.2.1}
+\contentsline {subsubsection}{\numberline {3.7.2.2}create\discretionary {-}{}{}Note}{15}{subsubsection.3.7.2.2}
+\contentsline {subsubsection}{\numberline {3.7.2.3}fetch\discretionary {-}{}{}Note}{15}{subsubsection.3.7.2.3}
+\contentsline {subsubsection}{\numberline {3.7.2.4}get\discretionary {-}{}{}Key}{16}{subsubsection.3.7.2.4}
+\contentsline {subsubsection}{\numberline {3.7.2.5}is\discretionary {-}{}{}Open}{16}{subsubsection.3.7.2.5}
+\contentsline {subsubsection}{\numberline {3.7.2.6}open}{16}{subsubsection.3.7.2.6}
+\contentsline {section}{\numberline {3.8}at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}Password\discretionary {-}{}{}Pop\discretionary {-}{}{}Up Class Reference}{17}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}Detailed Description}{17}{subsection.3.8.1}
+\contentsline {section}{\numberline {3.9}at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}Secure\discretionary {-}{}{}Shared\discretionary {-}{}{}Pref\discretionary {-}{}{}Adapter Class Reference}{17}{section.3.9}
+\contentsline {subsection}{\numberline {3.9.1}Detailed Description}{17}{subsection.3.9.1}
+\contentsline {section}{\numberline {3.10}at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}Secure\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Activity Class Reference}{18}{section.3.10}
+\contentsline {subsection}{\numberline {3.10.1}Detailed Description}{18}{subsection.3.10.1}
+\contentsline {subsection}{\numberline {3.10.2}Member Function Documentation}{18}{subsection.3.10.2}
+\contentsline {subsubsection}{\numberline {3.10.2.1}on\discretionary {-}{}{}Create}{18}{subsubsection.3.10.2.1}
+\contentsline {subsubsection}{\numberline {3.10.2.2}show\discretionary {-}{}{}Qr\discretionary {-}{}{}Code}{19}{subsubsection.3.10.2.2}
+\contentsline {section}{\numberline {3.11}at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}Secure\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter Class Reference}{19}{section.3.11}
+\contentsline {subsection}{\numberline {3.11.1}Detailed Description}{19}{subsection.3.11.1}
+\contentsline {subsection}{\numberline {3.11.2}Member Function Documentation}{19}{subsection.3.11.2}
+\contentsline {subsubsection}{\numberline {3.11.2.1}close}{19}{subsubsection.3.11.2.1}
+\contentsline {subsubsection}{\numberline {3.11.2.2}create\discretionary {-}{}{}Note}{20}{subsubsection.3.11.2.2}
+\contentsline {subsubsection}{\numberline {3.11.2.3}fetch\discretionary {-}{}{}Note}{20}{subsubsection.3.11.2.3}
+\contentsline {subsubsection}{\numberline {3.11.2.4}get\discretionary {-}{}{}Instance}{20}{subsubsection.3.11.2.4}
+\contentsline {subsubsection}{\numberline {3.11.2.5}get\discretionary {-}{}{}Key}{21}{subsubsection.3.11.2.5}
+\contentsline {subsubsection}{\numberline {3.11.2.6}is\discretionary {-}{}{}Open}{21}{subsubsection.3.11.2.6}
+\contentsline {subsubsection}{\numberline {3.11.2.7}open}{21}{subsubsection.3.11.2.7}
+\contentsline {section}{\numberline {3.12}at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter Class Reference}{21}{section.3.12}
+\contentsline {subsection}{\numberline {3.12.1}Detailed Description}{22}{subsection.3.12.1}
+\contentsline {subsection}{\numberline {3.12.2}Constructor \& Destructor Documentation}{22}{subsection.3.12.2}
+\contentsline {subsubsection}{\numberline {3.12.2.1}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}{22}{subsubsection.3.12.2.1}
+\contentsline {subsection}{\numberline {3.12.3}Member Function Documentation}{22}{subsection.3.12.3}
+\contentsline {subsubsection}{\numberline {3.12.3.1}close}{23}{subsubsection.3.12.3.1}
+\contentsline {subsubsection}{\numberline {3.12.3.2}create\discretionary {-}{}{}Note}{23}{subsubsection.3.12.3.2}
+\contentsline {subsubsection}{\numberline {3.12.3.3}fetch\discretionary {-}{}{}Note}{23}{subsubsection.3.12.3.3}
+\contentsline {subsubsection}{\numberline {3.12.3.4}get\discretionary {-}{}{}Instance}{23}{subsubsection.3.12.3.4}
+\contentsline {subsubsection}{\numberline {3.12.3.5}get\discretionary {-}{}{}Key}{24}{subsubsection.3.12.3.5}
+\contentsline {subsubsection}{\numberline {3.12.3.6}is\discretionary {-}{}{}Open}{24}{subsubsection.3.12.3.6}
+\contentsline {subsubsection}{\numberline {3.12.3.7}open}{24}{subsubsection.3.12.3.7}
+\contentsline {subsection}{\numberline {3.12.4}Member Data Documentation}{25}{subsection.3.12.4}
+\contentsline {subsubsection}{\numberline {3.12.4.1}P\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}S\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}M\discretionary {-}{}{}E}{25}{subsubsection.3.12.4.1}
+\contentsline {section}{\numberline {3.13}at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}Start\discretionary {-}{}{}Up Class Reference}{25}{section.3.13}
+\contentsline {subsection}{\numberline {3.13.1}Detailed Description}{25}{subsection.3.13.1}
+\contentsline {subsection}{\numberline {3.13.2}Member Function Documentation}{25}{subsection.3.13.2}
+\contentsline {subsubsection}{\numberline {3.13.2.1}check\discretionary {-}{}{}Login}{25}{subsubsection.3.13.2.1}
+\contentsline {subsection}{\numberline {3.13.3}Member Data Documentation}{26}{subsection.3.13.3}
+\contentsline {subsubsection}{\numberline {3.13.3.1}P\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}S\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}M\discretionary {-}{}{}E}{26}{subsubsection.3.13.3.1}
+\contentsline {section}{\numberline {3.14}at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}Util Class Reference}{26}{section.3.14}
+\contentsline {subsection}{\numberline {3.14.1}Detailed Description}{26}{subsection.3.14.1}
+\contentsline {subsection}{\numberline {3.14.2}Member Function Documentation}{26}{subsection.3.14.2}
+\contentsline {subsubsection}{\numberline {3.14.2.1}decrypt}{26}{subsubsection.3.14.2.1}
+\contentsline {subsubsection}{\numberline {3.14.2.2}encrypt}{27}{subsubsection.3.14.2.2}
+\contentsline {subsubsection}{\numberline {3.14.2.3}generate\discretionary {-}{}{}Seed}{27}{subsubsection.3.14.2.3}
+\contentsline {subsubsection}{\numberline {3.14.2.4}get\discretionary {-}{}{}Key}{27}{subsubsection.3.14.2.4}
+\contentsline {subsubsection}{\numberline {3.14.2.5}get\discretionary {-}{}{}Raw\discretionary {-}{}{}Key}{28}{subsubsection.3.14.2.5}
+\contentsline {subsubsection}{\numberline {3.14.2.6}show\discretionary {-}{}{}Toast}{28}{subsubsection.3.14.2.6}
+\contentsline {subsubsection}{\numberline {3.14.2.7}to\discretionary {-}{}{}Byte}{28}{subsubsection.3.14.2.7}
+\contentsline {subsubsection}{\numberline {3.14.2.8}to\discretionary {-}{}{}Hex}{28}{subsubsection.3.14.2.8}
+\contentsline {section}{\numberline {3.15}at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}Client Class Reference}{29}{section.3.15}
+\contentsline {subsection}{\numberline {3.15.1}Detailed Description}{29}{subsection.3.15.1}
+\contentsline {subsection}{\numberline {3.15.2}Member Function Documentation}{29}{subsection.3.15.2}
+\contentsline {subsubsection}{\numberline {3.15.2.1}get\discretionary {-}{}{}Connection}{29}{subsubsection.3.15.2.1}
+\contentsline {subsubsection}{\numberline {3.15.2.2}get\discretionary {-}{}{}Instance}{29}{subsubsection.3.15.2.2}
+\contentsline {subsubsection}{\numberline {3.15.2.3}get\discretionary {-}{}{}Roster}{30}{subsubsection.3.15.2.3}
+\contentsline {subsubsection}{\numberline {3.15.2.4}is\discretionary {-}{}{}Connected}{30}{subsubsection.3.15.2.4}
+\contentsline {subsubsection}{\numberline {3.15.2.5}login}{30}{subsubsection.3.15.2.5}
+\contentsline {subsubsection}{\numberline {3.15.2.6}send\discretionary {-}{}{}Message}{30}{subsubsection.3.15.2.6}
+\contentsline {section}{\numberline {3.16}at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}Logic Class Reference}{31}{section.3.16}
+\contentsline {subsection}{\numberline {3.16.1}Detailed Description}{31}{subsection.3.16.1}
+\contentsline {subsection}{\numberline {3.16.2}Member Function Documentation}{31}{subsection.3.16.2}
+\contentsline {subsubsection}{\numberline {3.16.2.1}get\discretionary {-}{}{}Connection}{31}{subsubsection.3.16.2.1}
+\contentsline {subsubsection}{\numberline {3.16.2.2}get\discretionary {-}{}{}Instance}{31}{subsubsection.3.16.2.2}
+\contentsline {subsubsection}{\numberline {3.16.2.3}set\discretionary {-}{}{}Connection}{31}{subsubsection.3.16.2.3}
+\contentsline {part}{Index}{31}{table.3.54}

@@ -1,0 +1,286 @@
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter}{\section{at.\-fhooe.\-kls.\-S\-M\-S\-Adapter Class Reference}
+\label{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter}\index{at.\-fhooe.\-kls.\-S\-M\-S\-Adapter@{at.\-fhooe.\-kls.\-S\-M\-S\-Adapter}}
+}
+Inheritance diagram for at.\-fhooe.\-kls.\-S\-M\-S\-Adapter\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter}{S\-M\-S\-Adapter} \hyperlink{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_ace41eadc4ea92f6730039d3ba6d2c396}{open} (String password)  throws S\-Q\-L\-Exception 
+\item 
+boolean \hyperlink{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_a32082acc0bf68a3f8ceeef1314f9911f}{is\-Open} ()
+\item 
+void \hyperlink{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_ad734ff8a56a4191edce7755d59abf36e}{close} ()
+\item 
+long \hyperlink{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_a0a1dbef21c89a477be916368adb4dbd4}{create\-Note} (String email, String key)
+\item 
+String \hyperlink{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_a0107f7e8035be3f23c5eea4f6a2cba5a}{get\-Key} (String email)
+\item 
+Cursor \hyperlink{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_a6bbc52be4af358d45b3be55c347e39fb}{fetch\-Note} (String email)  throws S\-Q\-L\-Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static synchronized \hyperlink{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter}{S\-M\-S\-Adapter} \hyperlink{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_a8435367d77be7c546935c8fef9fe0131}{get\-Instance} (Context ctx)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \hyperlink{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_aa6a9f2dc4b03b3fb0e751e31e014040b}{P\-R\-E\-F\-S\-\_\-\-N\-A\-M\-E} = \char`\"{}smsadapter\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_a0683e34c941a5cca1e9e57a7352ebd0d}{S\-M\-S\-Adapter} (Context ctx)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Class \hyperlink{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter}{S\-M\-S\-Adapter}. 
+
+Definition at line 18 of file S\-M\-S\-Adapter.\-java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_a0683e34c941a5cca1e9e57a7352ebd0d}{\index{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter@{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter}!S\-M\-S\-Adapter@{S\-M\-S\-Adapter}}
+\index{S\-M\-S\-Adapter@{S\-M\-S\-Adapter}!at::fhooe::kls::SMSAdapter@{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter}}
+\subsubsection[{S\-M\-S\-Adapter}]{\setlength{\rightskip}{0pt plus 5cm}at.\-fhooe.\-kls.\-S\-M\-S\-Adapter.\-S\-M\-S\-Adapter (
+\begin{DoxyParamCaption}
+\item[{Context}]{ctx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_a0683e34c941a5cca1e9e57a7352ebd0d}
+Instantiates a new s\-M\-S adapter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & the ctx \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 109 of file S\-M\-S\-Adapter.\-java.
+
+
+
+Referenced by at.\-fhooe.\-kls.\-S\-M\-S\-Adapter.\-get\-Instance().
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_ad734ff8a56a4191edce7755d59abf36e}{\index{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter@{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter}!close@{close}}
+\index{close@{close}!at::fhooe::kls::SMSAdapter@{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}void at.\-fhooe.\-kls.\-S\-M\-S\-Adapter.\-close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_ad734ff8a56a4191edce7755d59abf36e}
+Close. 
+
+Implements \hyperlink{interfaceat_1_1fhooe_1_1kls_1_1_i_s_m_s_adapter_a8a10e83175a3179bd8f9a02e7a494820}{at.\-fhooe.\-kls.\-I\-S\-M\-S\-Adapter}.
+
+
+
+Definition at line 185 of file S\-M\-S\-Adapter.\-java.
+
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_a0a1dbef21c89a477be916368adb4dbd4}{\index{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter@{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter}!create\-Note@{create\-Note}}
+\index{create\-Note@{create\-Note}!at::fhooe::kls::SMSAdapter@{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter}}
+\subsubsection[{create\-Note}]{\setlength{\rightskip}{0pt plus 5cm}long at.\-fhooe.\-kls.\-S\-M\-S\-Adapter.\-create\-Note (
+\begin{DoxyParamCaption}
+\item[{String}]{email, }
+\item[{String}]{key}
+\end{DoxyParamCaption}
+)}}\label{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_a0a1dbef21c89a477be916368adb4dbd4}
+Creates the note.
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & the email \\
+\hline
+{\em key} & the key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the long 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceat_1_1fhooe_1_1kls_1_1_i_s_m_s_adapter_a568276244f15d6c5fe1c1b0caee25f46}{at.\-fhooe.\-kls.\-I\-S\-M\-S\-Adapter}.
+
+
+
+Definition at line 196 of file S\-M\-S\-Adapter.\-java.
+
+
+
+References at.\-fhooe.\-kls.\-Util.\-encrypt(), at.\-fhooe.\-kls.\-S\-M\-S\-Adapter.\-get\-Key(), at.\-fhooe.\-kls.\-Hash.\-S\-H\-A256(), and at.\-fhooe.\-kls.\-Util.\-to\-Hex().
+
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_a6bbc52be4af358d45b3be55c347e39fb}{\index{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter@{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter}!fetch\-Note@{fetch\-Note}}
+\index{fetch\-Note@{fetch\-Note}!at::fhooe::kls::SMSAdapter@{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter}}
+\subsubsection[{fetch\-Note}]{\setlength{\rightskip}{0pt plus 5cm}Cursor at.\-fhooe.\-kls.\-S\-M\-S\-Adapter.\-fetch\-Note (
+\begin{DoxyParamCaption}
+\item[{String}]{email}
+\end{DoxyParamCaption}
+)  throws S\-Q\-L\-Exception }}\label{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_a6bbc52be4af358d45b3be55c347e39fb}
+Fetch note.
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & the email \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the cursor 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\-Q\-L\-Exception} & the s\-Q\-L exception \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{interfaceat_1_1fhooe_1_1kls_1_1_i_s_m_s_adapter_af04be729ebb94e0fba028b0a2bbf30fe}{at.\-fhooe.\-kls.\-I\-S\-M\-S\-Adapter}.
+
+
+
+Definition at line 257 of file S\-M\-S\-Adapter.\-java.
+
+
+
+Referenced by at.\-fhooe.\-kls.\-S\-M\-S\-Adapter.\-get\-Key().
+
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_a8435367d77be7c546935c8fef9fe0131}{\index{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter@{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!at::fhooe::kls::SMSAdapter@{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}static synchronized {\bf S\-M\-S\-Adapter} at.\-fhooe.\-kls.\-S\-M\-S\-Adapter.\-get\-Instance (
+\begin{DoxyParamCaption}
+\item[{Context}]{ctx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_a8435367d77be7c546935c8fef9fe0131}
+Gets the single instance of \hyperlink{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter}{S\-M\-S\-Adapter}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & the ctx \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+single instance of \hyperlink{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter}{S\-M\-S\-Adapter} 
+\end{DoxyReturn}
+
+
+Definition at line 122 of file S\-M\-S\-Adapter.\-java.
+
+
+
+References at.\-fhooe.\-kls.\-S\-M\-S\-Adapter.\-S\-M\-S\-Adapter().
+
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_a0107f7e8035be3f23c5eea4f6a2cba5a}{\index{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter@{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter}!get\-Key@{get\-Key}}
+\index{get\-Key@{get\-Key}!at::fhooe::kls::SMSAdapter@{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter}}
+\subsubsection[{get\-Key}]{\setlength{\rightskip}{0pt plus 5cm}String at.\-fhooe.\-kls.\-S\-M\-S\-Adapter.\-get\-Key (
+\begin{DoxyParamCaption}
+\item[{String}]{email}
+\end{DoxyParamCaption}
+)}}\label{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_a0107f7e8035be3f23c5eea4f6a2cba5a}
+Gets the key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & the email \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the key 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceat_1_1fhooe_1_1kls_1_1_i_s_m_s_adapter_a79ea0a9229ba30313b133b1e9d248c89}{at.\-fhooe.\-kls.\-I\-S\-M\-S\-Adapter}.
+
+
+
+Definition at line 232 of file S\-M\-S\-Adapter.\-java.
+
+
+
+References at.\-fhooe.\-kls.\-Util.\-decrypt(), at.\-fhooe.\-kls.\-S\-M\-S\-Adapter.\-fetch\-Note(), at.\-fhooe.\-kls.\-Hash.\-S\-H\-A256(), and at.\-fhooe.\-kls.\-Util.\-to\-Byte().
+
+
+
+Referenced by at.\-fhooe.\-kls.\-S\-M\-S\-Adapter.\-create\-Note().
+
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_a32082acc0bf68a3f8ceeef1314f9911f}{\index{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter@{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter}!is\-Open@{is\-Open}}
+\index{is\-Open@{is\-Open}!at::fhooe::kls::SMSAdapter@{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter}}
+\subsubsection[{is\-Open}]{\setlength{\rightskip}{0pt plus 5cm}boolean at.\-fhooe.\-kls.\-S\-M\-S\-Adapter.\-is\-Open (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_a32082acc0bf68a3f8ceeef1314f9911f}
+Checks if is open.
+
+\begin{DoxyReturn}{Returns}
+true, if is open 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceat_1_1fhooe_1_1kls_1_1_i_s_m_s_adapter_a6bb1775e3fdc638c8b7e422502d85fa6}{at.\-fhooe.\-kls.\-I\-S\-M\-S\-Adapter}.
+
+
+
+Definition at line 173 of file S\-M\-S\-Adapter.\-java.
+
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_ace41eadc4ea92f6730039d3ba6d2c396}{\index{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter@{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter}!open@{open}}
+\index{open@{open}!at::fhooe::kls::SMSAdapter@{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter}}
+\subsubsection[{open}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-M\-S\-Adapter} at.\-fhooe.\-kls.\-S\-M\-S\-Adapter.\-open (
+\begin{DoxyParamCaption}
+\item[{String}]{password}
+\end{DoxyParamCaption}
+)  throws S\-Q\-L\-Exception }}\label{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_ace41eadc4ea92f6730039d3ba6d2c396}
+Open.
+
+
+\begin{DoxyParams}{Parameters}
+{\em password} & the password \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the s\-M\-S adapter 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\-Q\-L\-Exception} & the s\-Q\-L exception \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{interfaceat_1_1fhooe_1_1kls_1_1_i_s_m_s_adapter_aadf3c5039b5140a42b45f64d31e0403c}{at.\-fhooe.\-kls.\-I\-S\-M\-S\-Adapter}.
+
+
+
+Definition at line 137 of file S\-M\-S\-Adapter.\-java.
+
+
+
+References at.\-fhooe.\-kls.\-S\-M\-S\-Adapter.\-P\-R\-E\-F\-S\-\_\-\-N\-A\-M\-E, at.\-fhooe.\-kls.\-Hash.\-S\-H\-A256(), and at.\-fhooe.\-kls.\-Util.\-to\-Hex().
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_aa6a9f2dc4b03b3fb0e751e31e014040b}{\index{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter@{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter}!P\-R\-E\-F\-S\-\_\-\-N\-A\-M\-E@{P\-R\-E\-F\-S\-\_\-\-N\-A\-M\-E}}
+\index{P\-R\-E\-F\-S\-\_\-\-N\-A\-M\-E@{P\-R\-E\-F\-S\-\_\-\-N\-A\-M\-E}!at::fhooe::kls::SMSAdapter@{at\-::fhooe\-::kls\-::\-S\-M\-S\-Adapter}}
+\subsubsection[{P\-R\-E\-F\-S\-\_\-\-N\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}final String at.\-fhooe.\-kls.\-S\-M\-S\-Adapter.\-P\-R\-E\-F\-S\-\_\-\-N\-A\-M\-E = \char`\"{}smsadapter\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{classat_1_1fhooe_1_1kls_1_1_s_m_s_adapter_aa6a9f2dc4b03b3fb0e751e31e014040b}
+The Constant P\-R\-E\-F\-S\-\_\-\-N\-A\-M\-E. 
+
+Definition at line 21 of file S\-M\-S\-Adapter.\-java.
+
+
+
+Referenced by at.\-fhooe.\-kls.\-S\-M\-S\-Adapter.\-open().
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/at/fhooe/kls/S\-M\-S\-Adapter.\-java\end{DoxyCompactItemize}

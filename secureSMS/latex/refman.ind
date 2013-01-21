@@ -1,0 +1,349 @@
+\begin{theindex}
+
+  \item {at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}Chat}, 
+		\hyperpage{5}
+  \item {at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}Chat\discretionary {-}{}{}List\discretionary {-}{}{}Adapter}, 
+		\hyperpage{6}
+  \item {at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}Chat\discretionary {-}{}{}Message}, 
+		\hyperpage{7}
+  \item {at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}Contact\discretionary {-}{}{}Item}, 
+		\hyperpage{10}
+  \item {at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}Contact\discretionary {-}{}{}List\discretionary {-}{}{}Adapter}, 
+		\hyperpage{13}
+  \item {at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}Hash}, 
+		\hyperpage{13}
+  \item {at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}I\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}, 
+		\hyperpage{14}
+  \item {at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}Password\discretionary {-}{}{}Pop\discretionary {-}{}{}Up}, 
+		\hyperpage{17}
+  \item {at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}, 
+		\hyperpage{21}
+  \item {at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}Secure\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Activity}, 
+		\hyperpage{18}
+  \item {at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}Secure\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}, 
+		\hyperpage{19}
+  \item {at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}Secure\discretionary {-}{}{}Shared\discretionary {-}{}{}Pref\discretionary {-}{}{}Adapter}, 
+		\hyperpage{17}
+  \item {at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}Start\discretionary {-}{}{}Up}, 
+		\hyperpage{25}
+  \item {at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}Util}, 
+		\hyperpage{26}
+  \item {at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}Client}, 
+		\hyperpage{29}
+  \item {at.\discretionary {-}{}{}fhooe.\discretionary {-}{}{}kls.\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}Logic}, 
+		\hyperpage{31}
+  \item {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Chat}
+    \subitem {on\discretionary {-}{}{}Create}, \hyperpage{5}
+    \subitem {set\discretionary {-}{}{}Contact}, \hyperpage{5}
+  \item {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Chat\discretionary {-}{}{}List\discretionary {-}{}{}Adapter}
+    \subitem {Chat\discretionary {-}{}{}List\discretionary {-}{}{}Adapter}, 
+		\hyperpage{6}
+  \item {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Chat\discretionary {-}{}{}Message}
+    \subitem {C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}R}, 
+		\hyperpage{9}
+    \subitem {Chat\discretionary {-}{}{}Message}, \hyperpage{7, 8}
+    \subitem {get\discretionary {-}{}{}Message}, \hyperpage{8}
+    \subitem {get\discretionary {-}{}{}Sender}, \hyperpage{8}
+    \subitem {get\discretionary {-}{}{}Time}, \hyperpage{8}
+    \subitem {is\discretionary {-}{}{}Mine}, \hyperpage{8}
+    \subitem {set\discretionary {-}{}{}Message}, \hyperpage{9}
+    \subitem {set\discretionary {-}{}{}Sender}, \hyperpage{9}
+    \subitem {set\discretionary {-}{}{}Time}, \hyperpage{9}
+    \subitem {short\discretionary {-}{}{}Time}, \hyperpage{9}
+  \item {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Contact\discretionary {-}{}{}Item}
+    \subitem {C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}R}, 
+		\hyperpage{12}
+    \subitem {Contact\discretionary {-}{}{}Item}, \hyperpage{11}
+    \subitem {get\discretionary {-}{}{}Key}, \hyperpage{11}
+    \subitem {get\discretionary {-}{}{}Status}, \hyperpage{11}
+    \subitem {get\discretionary {-}{}{}User}, \hyperpage{11}
+    \subitem {is\discretionary {-}{}{}Available}, \hyperpage{11}
+    \subitem {set\discretionary {-}{}{}Available}, \hyperpage{11}
+    \subitem {set\discretionary {-}{}{}Key}, \hyperpage{12}
+    \subitem {set\discretionary {-}{}{}Status}, \hyperpage{12}
+    \subitem {set\discretionary {-}{}{}User}, \hyperpage{12}
+  \item {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Contact\discretionary {-}{}{}List\discretionary {-}{}{}Adapter}
+    \subitem {Contact\discretionary {-}{}{}List\discretionary {-}{}{}Adapter}, 
+		\hyperpage{13}
+  \item {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Hash}
+    \subitem {D\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}A\discretionary {-}{}{}L\discretionary {-}{}{}G\discretionary {-}{}{}O\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}H\discretionary {-}{}{}M}, 
+		\hyperpage{14}
+    \subitem {S\discretionary {-}{}{}H\discretionary {-}{}{}A256}, 
+		\hyperpage{14}
+  \item {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}I\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}
+    \subitem {close}, \hyperpage{15}
+    \subitem {create\discretionary {-}{}{}Note}, \hyperpage{15}
+    \subitem {fetch\discretionary {-}{}{}Note}, \hyperpage{15}
+    \subitem {get\discretionary {-}{}{}Key}, \hyperpage{16}
+    \subitem {is\discretionary {-}{}{}Open}, \hyperpage{16}
+    \subitem {open}, \hyperpage{16}
+  \item {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}
+    \subitem {close}, \hyperpage{22}
+    \subitem {create\discretionary {-}{}{}Note}, \hyperpage{23}
+    \subitem {fetch\discretionary {-}{}{}Note}, \hyperpage{23}
+    \subitem {get\discretionary {-}{}{}Instance}, \hyperpage{23}
+    \subitem {get\discretionary {-}{}{}Key}, \hyperpage{24}
+    \subitem {is\discretionary {-}{}{}Open}, \hyperpage{24}
+    \subitem {open}, \hyperpage{24}
+    \subitem {P\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}S\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}M\discretionary {-}{}{}E}, 
+		\hyperpage{25}
+    \subitem {S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}, 
+		\hyperpage{22}
+  \item {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Secure\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Activity}
+    \subitem {on\discretionary {-}{}{}Create}, \hyperpage{18}
+    \subitem {show\discretionary {-}{}{}Qr\discretionary {-}{}{}Code}, 
+		\hyperpage{18}
+  \item {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Secure\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}
+    \subitem {close}, \hyperpage{19}
+    \subitem {create\discretionary {-}{}{}Note}, \hyperpage{20}
+    \subitem {fetch\discretionary {-}{}{}Note}, \hyperpage{20}
+    \subitem {get\discretionary {-}{}{}Instance}, \hyperpage{20}
+    \subitem {get\discretionary {-}{}{}Key}, \hyperpage{20}
+    \subitem {is\discretionary {-}{}{}Open}, \hyperpage{21}
+    \subitem {open}, \hyperpage{21}
+  \item {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Start\discretionary {-}{}{}Up}
+    \subitem {check\discretionary {-}{}{}Login}, \hyperpage{25}
+    \subitem {P\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}S\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}M\discretionary {-}{}{}E}, 
+		\hyperpage{26}
+  \item {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Util}
+    \subitem {decrypt}, \hyperpage{26}
+    \subitem {encrypt}, \hyperpage{27}
+    \subitem {generate\discretionary {-}{}{}Seed}, \hyperpage{27}
+    \subitem {get\discretionary {-}{}{}Key}, \hyperpage{27}
+    \subitem {get\discretionary {-}{}{}Raw\discretionary {-}{}{}Key}, 
+		\hyperpage{27}
+    \subitem {show\discretionary {-}{}{}Toast}, \hyperpage{28}
+    \subitem {to\discretionary {-}{}{}Byte}, \hyperpage{28}
+    \subitem {to\discretionary {-}{}{}Hex}, \hyperpage{28}
+  \item {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}Client}
+    \subitem {get\discretionary {-}{}{}Connection}, \hyperpage{29}
+    \subitem {get\discretionary {-}{}{}Instance}, \hyperpage{29}
+    \subitem {get\discretionary {-}{}{}Roster}, \hyperpage{29}
+    \subitem {is\discretionary {-}{}{}Connected}, \hyperpage{30}
+    \subitem {login}, \hyperpage{30}
+    \subitem {send\discretionary {-}{}{}Message}, \hyperpage{30}
+  \item {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}Logic}
+    \subitem {get\discretionary {-}{}{}Connection}, \hyperpage{31}
+    \subitem {get\discretionary {-}{}{}Instance}, \hyperpage{31}
+    \subitem {set\discretionary {-}{}{}Connection}, \hyperpage{31}
+
+  \indexspace
+
+  \item {C\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}R}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Chat\discretionary {-}{}{}Message}, 
+		\hyperpage{9}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Contact\discretionary {-}{}{}Item}, 
+		\hyperpage{12}
+  \item {Chat\discretionary {-}{}{}List\discretionary {-}{}{}Adapter}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Chat\discretionary {-}{}{}List\discretionary {-}{}{}Adapter}, 
+		\hyperpage{6}
+  \item {Chat\discretionary {-}{}{}Message}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Chat\discretionary {-}{}{}Message}, 
+		\hyperpage{7, 8}
+  \item {check\discretionary {-}{}{}Login}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Start\discretionary {-}{}{}Up}, 
+		\hyperpage{25}
+  \item {close}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}I\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}, 
+		\hyperpage{15}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Secure\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}, 
+		\hyperpage{19}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}, 
+		\hyperpage{22}
+  \item {Contact\discretionary {-}{}{}Item}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Contact\discretionary {-}{}{}Item}, 
+		\hyperpage{11}
+  \item {Contact\discretionary {-}{}{}List\discretionary {-}{}{}Adapter}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Contact\discretionary {-}{}{}List\discretionary {-}{}{}Adapter}, 
+		\hyperpage{13}
+  \item {create\discretionary {-}{}{}Note}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}I\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}, 
+		\hyperpage{15}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Secure\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}, 
+		\hyperpage{20}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}, 
+		\hyperpage{23}
+
+  \indexspace
+
+  \item {D\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}A\discretionary {-}{}{}L\discretionary {-}{}{}G\discretionary {-}{}{}O\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}T\discretionary {-}{}{}H\discretionary {-}{}{}M}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Hash}, 
+		\hyperpage{14}
+  \item {decrypt}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Util}, 
+		\hyperpage{26}
+
+  \indexspace
+
+  \item {encrypt}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Util}, 
+		\hyperpage{27}
+
+  \indexspace
+
+  \item {fetch\discretionary {-}{}{}Note}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}I\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}, 
+		\hyperpage{15}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Secure\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}, 
+		\hyperpage{20}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}, 
+		\hyperpage{23}
+
+  \indexspace
+
+  \item {generate\discretionary {-}{}{}Seed}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Util}, 
+		\hyperpage{27}
+  \item {get\discretionary {-}{}{}Connection}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}Client}, 
+		\hyperpage{29}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}Logic}, 
+		\hyperpage{31}
+  \item {get\discretionary {-}{}{}Instance}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Secure\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}, 
+		\hyperpage{20}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}, 
+		\hyperpage{23}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}Client}, 
+		\hyperpage{29}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}Logic}, 
+		\hyperpage{31}
+  \item {get\discretionary {-}{}{}Key}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Contact\discretionary {-}{}{}Item}, 
+		\hyperpage{11}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}I\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}, 
+		\hyperpage{16}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Secure\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}, 
+		\hyperpage{20}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}, 
+		\hyperpage{24}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Util}, 
+		\hyperpage{27}
+  \item {get\discretionary {-}{}{}Message}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Chat\discretionary {-}{}{}Message}, 
+		\hyperpage{8}
+  \item {get\discretionary {-}{}{}Raw\discretionary {-}{}{}Key}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Util}, 
+		\hyperpage{27}
+  \item {get\discretionary {-}{}{}Roster}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}Client}, 
+		\hyperpage{29}
+  \item {get\discretionary {-}{}{}Sender}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Chat\discretionary {-}{}{}Message}, 
+		\hyperpage{8}
+  \item {get\discretionary {-}{}{}Status}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Contact\discretionary {-}{}{}Item}, 
+		\hyperpage{11}
+  \item {get\discretionary {-}{}{}Time}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Chat\discretionary {-}{}{}Message}, 
+		\hyperpage{8}
+  \item {get\discretionary {-}{}{}User}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Contact\discretionary {-}{}{}Item}, 
+		\hyperpage{11}
+
+  \indexspace
+
+  \item {is\discretionary {-}{}{}Available}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Contact\discretionary {-}{}{}Item}, 
+		\hyperpage{11}
+  \item {is\discretionary {-}{}{}Connected}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}Client}, 
+		\hyperpage{30}
+  \item {is\discretionary {-}{}{}Mine}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Chat\discretionary {-}{}{}Message}, 
+		\hyperpage{8}
+  \item {is\discretionary {-}{}{}Open}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}I\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}, 
+		\hyperpage{16}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Secure\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}, 
+		\hyperpage{21}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}, 
+		\hyperpage{24}
+
+  \indexspace
+
+  \item {login}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}Client}, 
+		\hyperpage{30}
+
+  \indexspace
+
+  \item {on\discretionary {-}{}{}Create}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Chat}, 
+		\hyperpage{5}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Secure\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Activity}, 
+		\hyperpage{18}
+  \item {open}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}I\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}, 
+		\hyperpage{16}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Secure\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}, 
+		\hyperpage{21}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}, 
+		\hyperpage{24}
+
+  \indexspace
+
+  \item {P\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}S\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}M\discretionary {-}{}{}E}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}, 
+		\hyperpage{25}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Start\discretionary {-}{}{}Up}, 
+		\hyperpage{26}
+
+  \indexspace
+
+  \item {S\discretionary {-}{}{}H\discretionary {-}{}{}A256}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Hash}, 
+		\hyperpage{14}
+  \item {S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Adapter}, 
+		\hyperpage{22}
+  \item {send\discretionary {-}{}{}Message}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}Client}, 
+		\hyperpage{30}
+  \item {set\discretionary {-}{}{}Available}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Contact\discretionary {-}{}{}Item}, 
+		\hyperpage{11}
+  \item {set\discretionary {-}{}{}Connection}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}Logic}, 
+		\hyperpage{31}
+  \item {set\discretionary {-}{}{}Contact}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Chat}, 
+		\hyperpage{5}
+  \item {set\discretionary {-}{}{}Key}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Contact\discretionary {-}{}{}Item}, 
+		\hyperpage{12}
+  \item {set\discretionary {-}{}{}Message}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Chat\discretionary {-}{}{}Message}, 
+		\hyperpage{9}
+  \item {set\discretionary {-}{}{}Sender}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Chat\discretionary {-}{}{}Message}, 
+		\hyperpage{9}
+  \item {set\discretionary {-}{}{}Status}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Contact\discretionary {-}{}{}Item}, 
+		\hyperpage{12}
+  \item {set\discretionary {-}{}{}Time}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Chat\discretionary {-}{}{}Message}, 
+		\hyperpage{9}
+  \item {set\discretionary {-}{}{}User}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Contact\discretionary {-}{}{}Item}, 
+		\hyperpage{12}
+  \item {short\discretionary {-}{}{}Time}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Chat\discretionary {-}{}{}Message}, 
+		\hyperpage{9}
+  \item {show\discretionary {-}{}{}Qr\discretionary {-}{}{}Code}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Secure\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}Activity}, 
+		\hyperpage{18}
+  \item {show\discretionary {-}{}{}Toast}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Util}, 
+		\hyperpage{28}
+
+  \indexspace
+
+  \item {to\discretionary {-}{}{}Byte}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Util}, 
+		\hyperpage{28}
+  \item {to\discretionary {-}{}{}Hex}
+    \subitem {at\discretionary {-}{}{}::fhooe\discretionary {-}{}{}::kls\discretionary {-}{}{}::\discretionary {-}{}{}Util}, 
+		\hyperpage{28}
+
+\end{theindex}

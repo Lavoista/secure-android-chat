@@ -1,0 +1,223 @@
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter}{\section{at.\-fhooe.\-kls.\-Secure\-S\-M\-S\-Adapter Class Reference}
+\label{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter}\index{at.\-fhooe.\-kls.\-Secure\-S\-M\-S\-Adapter@{at.\-fhooe.\-kls.\-Secure\-S\-M\-S\-Adapter}}
+}
+Inheritance diagram for at.\-fhooe.\-kls.\-Secure\-S\-M\-S\-Adapter\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter}{Secure\-S\-M\-S\-Adapter} \hyperlink{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter_a2440ce7acceadd844be860e6f3abc726}{open} (String password)  throws S\-Q\-L\-Exception 
+\item 
+boolean \hyperlink{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter_a3a5818f550316111f5997cbd319b79e0}{is\-Open} ()
+\item 
+void \hyperlink{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter_a24e26b930062d82381b907a2fb997371}{close} ()
+\item 
+long \hyperlink{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter_a247ac1ceae4179521836ec79957cf160}{create\-Note} (String email, String key)
+\item 
+Cursor \hyperlink{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter_ae88bc7113d7d7b8e6b09880a0da09124}{fetch\-Note} (String email)  throws S\-Q\-L\-Exception 
+\item 
+String \hyperlink{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter_a38cbfa4e2a84517ef6ba79d0a0cf0bea}{get\-Key} (String email)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static synchronized \\*
+\hyperlink{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter}{Secure\-S\-M\-S\-Adapter} \hyperlink{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter_a02cae22a651853b89324de945bb89e64}{get\-Instance} (Context ctx)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The Class \hyperlink{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter}{Secure\-S\-M\-S\-Adapter}. 
+
+Definition at line 15 of file Secure\-S\-M\-S\-Adapter.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter_a24e26b930062d82381b907a2fb997371}{\index{at\-::fhooe\-::kls\-::\-Secure\-S\-M\-S\-Adapter@{at\-::fhooe\-::kls\-::\-Secure\-S\-M\-S\-Adapter}!close@{close}}
+\index{close@{close}!at::fhooe::kls::SecureSMSAdapter@{at\-::fhooe\-::kls\-::\-Secure\-S\-M\-S\-Adapter}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}void at.\-fhooe.\-kls.\-Secure\-S\-M\-S\-Adapter.\-close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter_a24e26b930062d82381b907a2fb997371}
+Close. 
+
+Implements \hyperlink{interfaceat_1_1fhooe_1_1kls_1_1_i_s_m_s_adapter_a8a10e83175a3179bd8f9a02e7a494820}{at.\-fhooe.\-kls.\-I\-S\-M\-S\-Adapter}.
+
+
+
+Definition at line 135 of file Secure\-S\-M\-S\-Adapter.\-java.
+
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter_a247ac1ceae4179521836ec79957cf160}{\index{at\-::fhooe\-::kls\-::\-Secure\-S\-M\-S\-Adapter@{at\-::fhooe\-::kls\-::\-Secure\-S\-M\-S\-Adapter}!create\-Note@{create\-Note}}
+\index{create\-Note@{create\-Note}!at::fhooe::kls::SecureSMSAdapter@{at\-::fhooe\-::kls\-::\-Secure\-S\-M\-S\-Adapter}}
+\subsubsection[{create\-Note}]{\setlength{\rightskip}{0pt plus 5cm}long at.\-fhooe.\-kls.\-Secure\-S\-M\-S\-Adapter.\-create\-Note (
+\begin{DoxyParamCaption}
+\item[{String}]{email, }
+\item[{String}]{key}
+\end{DoxyParamCaption}
+)}}\label{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter_a247ac1ceae4179521836ec79957cf160}
+Creates the note.
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & the email \\
+\hline
+{\em key} & the key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the long 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceat_1_1fhooe_1_1kls_1_1_i_s_m_s_adapter_a568276244f15d6c5fe1c1b0caee25f46}{at.\-fhooe.\-kls.\-I\-S\-M\-S\-Adapter}.
+
+
+
+Definition at line 143 of file Secure\-S\-M\-S\-Adapter.\-java.
+
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter_ae88bc7113d7d7b8e6b09880a0da09124}{\index{at\-::fhooe\-::kls\-::\-Secure\-S\-M\-S\-Adapter@{at\-::fhooe\-::kls\-::\-Secure\-S\-M\-S\-Adapter}!fetch\-Note@{fetch\-Note}}
+\index{fetch\-Note@{fetch\-Note}!at::fhooe::kls::SecureSMSAdapter@{at\-::fhooe\-::kls\-::\-Secure\-S\-M\-S\-Adapter}}
+\subsubsection[{fetch\-Note}]{\setlength{\rightskip}{0pt plus 5cm}Cursor at.\-fhooe.\-kls.\-Secure\-S\-M\-S\-Adapter.\-fetch\-Note (
+\begin{DoxyParamCaption}
+\item[{String}]{email}
+\end{DoxyParamCaption}
+)  throws S\-Q\-L\-Exception }}\label{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter_ae88bc7113d7d7b8e6b09880a0da09124}
+Fetch note.
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & the email \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the cursor 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\-Q\-L\-Exception} & the s\-Q\-L exception \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{interfaceat_1_1fhooe_1_1kls_1_1_i_s_m_s_adapter_af04be729ebb94e0fba028b0a2bbf30fe}{at.\-fhooe.\-kls.\-I\-S\-M\-S\-Adapter}.
+
+
+
+Definition at line 157 of file Secure\-S\-M\-S\-Adapter.\-java.
+
+
+
+Referenced by at.\-fhooe.\-kls.\-Secure\-S\-M\-S\-Adapter.\-get\-Key().
+
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter_a02cae22a651853b89324de945bb89e64}{\index{at\-::fhooe\-::kls\-::\-Secure\-S\-M\-S\-Adapter@{at\-::fhooe\-::kls\-::\-Secure\-S\-M\-S\-Adapter}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!at::fhooe::kls::SecureSMSAdapter@{at\-::fhooe\-::kls\-::\-Secure\-S\-M\-S\-Adapter}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}static synchronized {\bf Secure\-S\-M\-S\-Adapter} at.\-fhooe.\-kls.\-Secure\-S\-M\-S\-Adapter.\-get\-Instance (
+\begin{DoxyParamCaption}
+\item[{Context}]{ctx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter_a02cae22a651853b89324de945bb89e64}
+Gets the single instance of \hyperlink{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter}{Secure\-S\-M\-S\-Adapter}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & the ctx \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+single instance of \hyperlink{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter}{Secure\-S\-M\-S\-Adapter} 
+\end{DoxyReturn}
+
+
+Definition at line 100 of file Secure\-S\-M\-S\-Adapter.\-java.
+
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter_a38cbfa4e2a84517ef6ba79d0a0cf0bea}{\index{at\-::fhooe\-::kls\-::\-Secure\-S\-M\-S\-Adapter@{at\-::fhooe\-::kls\-::\-Secure\-S\-M\-S\-Adapter}!get\-Key@{get\-Key}}
+\index{get\-Key@{get\-Key}!at::fhooe::kls::SecureSMSAdapter@{at\-::fhooe\-::kls\-::\-Secure\-S\-M\-S\-Adapter}}
+\subsubsection[{get\-Key}]{\setlength{\rightskip}{0pt plus 5cm}String at.\-fhooe.\-kls.\-Secure\-S\-M\-S\-Adapter.\-get\-Key (
+\begin{DoxyParamCaption}
+\item[{String}]{email}
+\end{DoxyParamCaption}
+)}}\label{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter_a38cbfa4e2a84517ef6ba79d0a0cf0bea}
+Gets the key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & the email \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the key 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceat_1_1fhooe_1_1kls_1_1_i_s_m_s_adapter_a79ea0a9229ba30313b133b1e9d248c89}{at.\-fhooe.\-kls.\-I\-S\-M\-S\-Adapter}.
+
+
+
+Definition at line 174 of file Secure\-S\-M\-S\-Adapter.\-java.
+
+
+
+References at.\-fhooe.\-kls.\-Secure\-S\-M\-S\-Adapter.\-fetch\-Note().
+
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter_a3a5818f550316111f5997cbd319b79e0}{\index{at\-::fhooe\-::kls\-::\-Secure\-S\-M\-S\-Adapter@{at\-::fhooe\-::kls\-::\-Secure\-S\-M\-S\-Adapter}!is\-Open@{is\-Open}}
+\index{is\-Open@{is\-Open}!at::fhooe::kls::SecureSMSAdapter@{at\-::fhooe\-::kls\-::\-Secure\-S\-M\-S\-Adapter}}
+\subsubsection[{is\-Open}]{\setlength{\rightskip}{0pt plus 5cm}boolean at.\-fhooe.\-kls.\-Secure\-S\-M\-S\-Adapter.\-is\-Open (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter_a3a5818f550316111f5997cbd319b79e0}
+Checks if is open.
+
+\begin{DoxyReturn}{Returns}
+true, if is open 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceat_1_1fhooe_1_1kls_1_1_i_s_m_s_adapter_a6bb1775e3fdc638c8b7e422502d85fa6}{at.\-fhooe.\-kls.\-I\-S\-M\-S\-Adapter}.
+
+
+
+Definition at line 125 of file Secure\-S\-M\-S\-Adapter.\-java.
+
+\hypertarget{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter_a2440ce7acceadd844be860e6f3abc726}{\index{at\-::fhooe\-::kls\-::\-Secure\-S\-M\-S\-Adapter@{at\-::fhooe\-::kls\-::\-Secure\-S\-M\-S\-Adapter}!open@{open}}
+\index{open@{open}!at::fhooe::kls::SecureSMSAdapter@{at\-::fhooe\-::kls\-::\-Secure\-S\-M\-S\-Adapter}}
+\subsubsection[{open}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Secure\-S\-M\-S\-Adapter} at.\-fhooe.\-kls.\-Secure\-S\-M\-S\-Adapter.\-open (
+\begin{DoxyParamCaption}
+\item[{String}]{password}
+\end{DoxyParamCaption}
+)  throws S\-Q\-L\-Exception }}\label{classat_1_1fhooe_1_1kls_1_1_secure_s_m_s_adapter_a2440ce7acceadd844be860e6f3abc726}
+Open.
+
+
+\begin{DoxyParams}{Parameters}
+{\em password} & the password \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the s\-M\-S adapter 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\-Q\-L\-Exception} & the s\-Q\-L exception \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{interfaceat_1_1fhooe_1_1kls_1_1_i_s_m_s_adapter_aadf3c5039b5140a42b45f64d31e0403c}{at.\-fhooe.\-kls.\-I\-S\-M\-S\-Adapter}.
+
+
+
+Definition at line 113 of file Secure\-S\-M\-S\-Adapter.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/at/fhooe/kls/Secure\-S\-M\-S\-Adapter.\-java\end{DoxyCompactItemize}

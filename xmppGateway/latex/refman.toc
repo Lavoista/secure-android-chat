@@ -1,0 +1,78 @@
+\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Server Class Reference}{7}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{7}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Member Function Documentation}{7}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}handle\discretionary {-}{}{}X\discretionary {-}{}{}M\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}Message}{7}{subsubsection.4.1.2.1}
+\contentsline {section}{\numberline {4.2}W\discretionary {-}{}{}T\discretionary {-}{}{}F\discretionary {-}{}{}Connection Class Reference}{7}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{8}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Constructor \& Destructor Documentation}{8}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}W\discretionary {-}{}{}T\discretionary {-}{}{}F\discretionary {-}{}{}Connection}{8}{subsubsection.4.2.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2.2}W\discretionary {-}{}{}T\discretionary {-}{}{}F\discretionary {-}{}{}Connection}{8}{subsubsection.4.2.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.3}W\discretionary {-}{}{}T\discretionary {-}{}{}F\discretionary {-}{}{}Connection}{8}{subsubsection.4.2.2.3}
+\contentsline {subsection}{\numberline {4.2.3}Member Function Documentation}{8}{subsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.3.1}to\discretionary {-}{}{}String}{8}{subsubsection.4.2.3.1}
+\contentsline {section}{\numberline {4.3}Xmpp\discretionary {-}{}{}Connection\discretionary {-}{}{}Handler Class Reference}{8}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{9}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Constructor \& Destructor Documentation}{9}{subsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2.1}Xmpp\discretionary {-}{}{}Connection\discretionary {-}{}{}Handler}{9}{subsubsection.4.3.2.1}
+\contentsline {subsection}{\numberline {4.3.3}Member Function Documentation}{9}{subsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.3.1}connection\discretionary {-}{}{}Closed}{9}{subsubsection.4.3.3.1}
+\contentsline {subsubsection}{\numberline {4.3.3.2}connection\discretionary {-}{}{}Closed\discretionary {-}{}{}On\discretionary {-}{}{}Error}{9}{subsubsection.4.3.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3.3}print\discretionary {-}{}{}Packet}{9}{subsubsection.4.3.3.3}
+\contentsline {subsubsection}{\numberline {4.3.3.4}process\discretionary {-}{}{}Packet}{9}{subsubsection.4.3.3.4}
+\contentsline {subsubsection}{\numberline {4.3.3.5}reconnecting\discretionary {-}{}{}In}{9}{subsubsection.4.3.3.5}
+\contentsline {subsubsection}{\numberline {4.3.3.6}reconnection\discretionary {-}{}{}Failed}{9}{subsubsection.4.3.3.6}
+\contentsline {subsubsection}{\numberline {4.3.3.7}reconnection\discretionary {-}{}{}Successful}{9}{subsubsection.4.3.3.7}
+\contentsline {section}{\numberline {4.4}Xmpp\discretionary {-}{}{}Gateway Class Reference}{10}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{10}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Constructor \& Destructor Documentation}{10}{subsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.2.1}Xmpp\discretionary {-}{}{}Gateway}{10}{subsubsection.4.4.2.1}
+\contentsline {subsection}{\numberline {4.4.3}Member Function Documentation}{10}{subsection.4.4.3}
+\contentsline {subsubsection}{\numberline {4.4.3.1}init\discretionary {-}{}{}U\discretionary {-}{}{}I}{10}{subsubsection.4.4.3.1}
+\contentsline {subsubsection}{\numberline {4.4.3.2}main}{10}{subsubsection.4.4.3.2}
+\contentsline {subsubsection}{\numberline {4.4.3.3}window\discretionary {-}{}{}Closing}{11}{subsubsection.4.4.3.3}
+\contentsline {section}{\numberline {4.5}Xmpp\discretionary {-}{}{}Panel Class Reference}{11}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{12}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Constructor \& Destructor Documentation}{12}{subsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.2.1}Xmpp\discretionary {-}{}{}Panel}{12}{subsubsection.4.5.2.1}
+\contentsline {subsection}{\numberline {4.5.3}Member Function Documentation}{12}{subsection.4.5.3}
+\contentsline {subsubsection}{\numberline {4.5.3.1}connect}{12}{subsubsection.4.5.3.1}
+\contentsline {subsubsection}{\numberline {4.5.3.2}connection\discretionary {-}{}{}Closed}{12}{subsubsection.4.5.3.2}
+\contentsline {subsubsection}{\numberline {4.5.3.3}connection\discretionary {-}{}{}Closed\discretionary {-}{}{}On\discretionary {-}{}{}Error}{12}{subsubsection.4.5.3.3}
+\contentsline {subsubsection}{\numberline {4.5.3.4}disconnect}{12}{subsubsection.4.5.3.4}
+\contentsline {subsubsection}{\numberline {4.5.3.5}forward\discretionary {-}{}{}Message}{12}{subsubsection.4.5.3.5}
+\contentsline {subsubsection}{\numberline {4.5.3.6}handle\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}P\discretionary {-}{}{}Message}{13}{subsubsection.4.5.3.6}
+\contentsline {subsubsection}{\numberline {4.5.3.7}print\discretionary {-}{}{}Message}{13}{subsubsection.4.5.3.7}
+\contentsline {subsubsection}{\numberline {4.5.3.8}process\discretionary {-}{}{}Packet}{13}{subsubsection.4.5.3.8}
+\contentsline {subsubsection}{\numberline {4.5.3.9}reconnecting\discretionary {-}{}{}In}{13}{subsubsection.4.5.3.9}
+\contentsline {subsubsection}{\numberline {4.5.3.10}reconnection\discretionary {-}{}{}Failed}{13}{subsubsection.4.5.3.10}
+\contentsline {subsubsection}{\numberline {4.5.3.11}reconnection\discretionary {-}{}{}Successful}{13}{subsubsection.4.5.3.11}
+\contentsline {subsection}{\numberline {4.5.4}Member Data Documentation}{14}{subsection.4.5.4}
+\contentsline {subsubsection}{\numberline {4.5.4.1}D\discretionary {-}{}{}E\discretionary {-}{}{}L\discretionary {-}{}{}A\discretionary {-}{}{}Y}{14}{subsubsection.4.5.4.1}
+\contentsline {subsubsection}{\numberline {4.5.4.2}label}{14}{subsubsection.4.5.4.2}
+\contentsline {subsubsection}{\numberline {4.5.4.3}label\discretionary {-}{}{}\_\discretionary {-}{}{}1}{14}{subsubsection.4.5.4.3}
+\contentsline {subsubsection}{\numberline {4.5.4.4}lbl\discretionary {-}{}{}Xmpp\discretionary {-}{}{}Connections}{14}{subsubsection.4.5.4.4}
+\contentsline {subsubsection}{\numberline {4.5.4.5}m\discretionary {-}{}{}\_\discretionary {-}{}{}accounts}{14}{subsubsection.4.5.4.5}
+\contentsline {subsubsection}{\numberline {4.5.4.6}m\discretionary {-}{}{}\_\discretionary {-}{}{}config}{14}{subsubsection.4.5.4.6}
+\contentsline {subsubsection}{\numberline {4.5.4.7}m\discretionary {-}{}{}\_\discretionary {-}{}{}connection\discretionary {-}{}{}List}{14}{subsubsection.4.5.4.7}
+\contentsline {subsubsection}{\numberline {4.5.4.8}m\discretionary {-}{}{}\_\discretionary {-}{}{}connections}{15}{subsubsection.4.5.4.8}
+\contentsline {subsubsection}{\numberline {4.5.4.9}m\discretionary {-}{}{}\_\discretionary {-}{}{}list\discretionary {-}{}{}Model}{15}{subsubsection.4.5.4.9}
+\contentsline {subsubsection}{\numberline {4.5.4.10}m\discretionary {-}{}{}\_\discretionary {-}{}{}log\discretionary {-}{}{}Area}{15}{subsubsection.4.5.4.10}
+\contentsline {subsubsection}{\numberline {4.5.4.11}m\discretionary {-}{}{}\_\discretionary {-}{}{}relation\discretionary {-}{}{}\_\discretionary {-}{}{}in}{15}{subsubsection.4.5.4.11}
+\contentsline {subsubsection}{\numberline {4.5.4.12}m\discretionary {-}{}{}\_\discretionary {-}{}{}relation\discretionary {-}{}{}\_\discretionary {-}{}{}out}{15}{subsubsection.4.5.4.12}
+\contentsline {subsubsection}{\numberline {4.5.4.13}scroll\discretionary {-}{}{}Pane\discretionary {-}{}{}\_\discretionary {-}{}{}2}{15}{subsubsection.4.5.4.13}
+\contentsline {subsubsection}{\numberline {4.5.4.14}serial\discretionary {-}{}{}Version\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}D}{15}{subsubsection.4.5.4.14}
+\contentsline {subsubsection}{\numberline {4.5.4.15}xmpp\discretionary {-}{}{}Config}{15}{subsubsection.4.5.4.15}
+\contentsline {chapter}{\numberline {5}File Documentation}{17}{chapter.5}
+\contentsline {section}{\numberline {5.1}src/\discretionary {-}{}{}Server.java File Reference}{17}{section.5.1}
+\contentsline {section}{\numberline {5.2}src/\discretionary {-}{}{}W\discretionary {-}{}{}T\discretionary {-}{}{}F\discretionary {-}{}{}Connection.java File Reference}{17}{section.5.2}
+\contentsline {section}{\numberline {5.3}src/\discretionary {-}{}{}Xmpp\discretionary {-}{}{}Connection\discretionary {-}{}{}Handler.java File Reference}{17}{section.5.3}
+\contentsline {section}{\numberline {5.4}src/\discretionary {-}{}{}Xmpp\discretionary {-}{}{}Gateway.java File Reference}{17}{section.5.4}
+\contentsline {section}{\numberline {5.5}src/\discretionary {-}{}{}Xmpp\discretionary {-}{}{}Panel.java File Reference}{17}{section.5.5}
+\contentsline {part}{Index}{17}{section*.15}
